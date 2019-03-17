@@ -4,5 +4,5 @@
 Main Reference 
 ==============
 
-.. [statspy] Wenqiang Feng. `Statistics Python Library API <http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_.
+.. [statspy] Wenqiang Feng. `Statistics Python Library API <https://runawayhorse001.github.io/statspy>`_.
 

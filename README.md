@@ -1,6 +1,7 @@
 # StatsPy
 
-This is my statistics python library. If you want to colne and install it, you can use 
+This is my statistics python library: https://runawayhorse001.github.io/statspy. 
+If you want to colne and install it, you can use 
 
 - clone
 
