@@ -97,7 +97,9 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="basics.html">3. Statistics Python Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reference.html">4. Main Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">4. Hypothesis Testing Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo.html">5. Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">6. Main Reference</a></li>
 </ul>
 
             
@@ -192,9 +194,35 @@ python setup.py install
 python test1.py
 </pre></div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">test1.py</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">statspy.basics</span>	<span class="kn">import</span> <span class="n">rnorm</span>
+<span class="kn">from</span> <span class="nn">statspy.tests</span> <span class="kn">import</span> <span class="n">t_test</span>
+
+<span class="c1"># rnorm demo</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">10</span> 
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">rnorm</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># t.test demo</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">t_test</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
 <p><code class="docutils literal notranslate"><span class="pre">Results</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">-</span><span class="mf">0.7985165</span>  <span class="o">-</span><span class="mf">0.33687786</span>  <span class="mf">1.85808405</span> <span class="o">-</span><span class="mf">1.05770596</span> <span class="o">-</span><span class="mf">0.60614307</span>  <span class="mf">0.72978979</span>
-  <span class="mf">0.86686617</span>  <span class="mf">1.21733246</span> <span class="o">-</span><span class="mf">1.15885016</span>  <span class="mf">0.90996324</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">-</span><span class="mf">1.27920153</span>  <span class="mf">0.84000173</span>  <span class="mf">1.75114469</span> <span class="o">-</span><span class="mf">0.02731652</span> <span class="o">-</span><span class="mf">0.56417185</span> <span class="o">-</span><span class="mf">0.61239996</span>
+ <span class="o">-</span><span class="mf">1.47376967</span>  <span class="mf">1.39551562</span> <span class="o">-</span><span class="mf">0.8559779</span>   <span class="mf">0.60139758</span><span class="p">]</span>
+
+    <span class="o">--------------------------------------------------------------------------------</span>
+    <span class="c1">#       One Sample t-test</span>
+    <span class="c1"># data:  [&#39;y&#39;]</span>
+    <span class="c1"># t = 3.872983346207417, df = 3, p-value = 0.030466291662170977</span>
+    <span class="c1"># alternative hypothesis: true mean is not equal to 0.0</span>
+    <span class="c1"># 95.0 percent confidence interval:</span>
+    <span class="c1"># 0.4457397432391206, 4.554260256760879</span>
+    <span class="c1"># mean of x</span>
+    <span class="c1">#         2.5</span>
+    <span class="o">--------------------------------------------------------------------------------</span>
 </pre></div>
 </div>
 </div>

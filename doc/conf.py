@@ -31,8 +31,14 @@ from __future__ import absolute_import, print_function, division
 import os
 import sys
 
-theano_path = os.path.join(os.path.dirname(__file__), os.pardir)
-sys.path.append(os.path.abspath(theano_path))
+#theano_path = os.path.join(os.path.dirname(__file__), os.pardir)
+#sys.path.append(os.path.abspath(theano_path))
+# throot = os.path.abspath(
+#         os.path.join(sys.path[0], os.pardir))
+# statspy_path = throot + '/statspy'
+# sys.path.append(os.path.abspath(statspy_path))
+sys.path.insert(0, os.path.abspath('..'))
+
 import versioneer
 
 # General configuration
@@ -242,16 +248,16 @@ def linkcode_resolve(domain, info):
         import inspect
         import os
         fn = inspect.getsourcefile(obj)
-        fn = os.path.relpath(fn, start=os.path.dirname(theano.__file__))
+        fn = os.path.relpath(fn, start=os.path.abspath('..'))
         source, lineno = inspect.getsourcelines(obj)
         return fn, lineno, lineno + len(source) - 1
 
     if domain != 'py' or not info['module']:
         return None
-    # try:
-    #     filename = 'theano/%s#L%d-L%d' % find_source()
-    # except Exception:
-    #     filename = info['module'].replace('.', '/') + '.py'
+    try:
+        filename = 'statspy/%s#L%d-L%d' % find_source()
+    except Exception:
+        filename = info['module'].replace('.', '/') + '.py'
     import subprocess
     tag = subprocess.Popen(['git', 'rev-parse', 'HEAD'],
                            stdout=subprocess.PIPE,

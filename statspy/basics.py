@@ -1,62 +1,53 @@
 import numpy as np
 from scipy.stats import norm
-
-
-class Basics(object):
+   
+def rnorm(n, mean=0, sd=1):
     """
-    A class that contains the
+    Random generation for the normal distribution with mean 
+    equal to mean and standard deviation equation to sd
+    same functions as rnorm in r: ``rnorm(n, mean=0, sd=1)``
+
+    :param n: the number of the observations
+    :param mean: vector of means
+    :param sd: vector of standard deviations
+    :return: the vector of the random numbers  
+
+    :author: Wenqiang Feng
+    :email:  von198@gmail.com
     """
-    def __init__(self, x):
-        super(Basics, self).__init__()
-        self.x = x
-        
-    def rnorm(self, n, mean=0, sd=1):
-        """
-        Random generation for the normal distribution with mean 
-        equal to mean and standard deviation equation to sd
-        same functions as rnorm in r: rnorm(n, mean=0, sd=1)
+    return norm.rvs(loc=mean, scale=sd, size=n)
 
-        :param n: the number of the observations
-        :param mean: vector of means
-        :param sd: vector of standard deviations
-        :return : the vector of the random numbers  
+def dnorm(x, mean=0, sd=1, log=False):
+    """
+    Density of the normal distribution with mean 
+    equal to mean and standard deviation equation to sd
+    same functions as rnorm in r: ``dnorm(x, mean=0, sd=1, log=FALSE)``
 
-        :author: Wenqiang Feng
-        :email:  von198@gmail.com
-        """
-        return norm.rvs(loc=mean, scale=sd, size=n)
+    :param x: the vector od quantiles
+    :param mean: vector of means
+    :param sd: vector of standard deviations
+    :return: the list of the density  
 
-    def dnorm(self, x, mean=0, sd=1, log=False):
-        """
-        Density of the normal distribution with mean 
-        equal to mean and standard deviation equation to sd
-        same functions as rnorm in r: dnorm(x, mean=0, sd=1, log=FALSE)
+    :author: Wenqiang Feng
+    :email:  von198@gmail.com    
+    """
+    if log:
+        return np.log(norm.pdf(x=x, loc=mean, scale=sd))
+    else:
+        return norm.pdf(x=x, loc=mean, scale=sd)
 
-        :param x: the vector od quantiles
-        :param mean: vector of means
-        :param sd: vector of standard deviations
-        :return : the list of the density  
+def runif(n, min=0, max=1):
+    """
+    Random generation from the uniform distribution
+    same functions as rnorm in r: ``runif(n, min=0, max=1)``
 
-        :author: Wenqiang Feng
-        :email:  von198@gmail.com    
-        """
-        if log:
-            return np.log(norm.pdf(x=x, loc=mean, scale=sd))
-        else:
-            return norm.pdf(x=x, loc=mean, scale=sd)
+    :param n: the number of the observations
+    :param min: the lower limit of the distribution 
+    :param max: the upper limit of the distribution
+    :return: the list of n uniform random numers 
 
-    def runif(self, n, min=0, max=1):
-        """
-        Random generation from the uniform distribution
-        same functions as rnorm in r: runif(n, min=0, max=1)
-
-        :param n: the number of the observations
-        :param min: the lower limit of the distribution 
-        :param max: the upper limit of the distribution
-        :return : the list of n uniform random numers 
-
-        :author: Wenqiang Feng
-        :email:  von198@gmail.com  
-        """
-        return np.random.uniform(min, max, size=n)
+    :author: Wenqiang Feng
+    :email:  von198@gmail.com  
+    """
+    return np.random.uniform(min, max, size=n)
 
