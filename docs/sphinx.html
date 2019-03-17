@@ -1,0 +1,1122 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4. Sphinx Configuration &mdash; Statistics Python Library API 1.00 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/icon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fix_rtd.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5. reStructuredText Markup" href="rtxt.html" />
+    <link rel="prev" title="3. Packages Installation" href="pkgs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Statistics Python Library API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.00
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pkgs.html">3. Packages Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Sphinx Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-html-configuration">4.1. General HTML Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-evironment-infomation">4.1.1. General Evironment Infomation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#general-project-infomation">4.1.2. General Project Infomation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#general-latex-configuration">4.2. General LaTex Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-latex-output-options">4.2.1. General LaTeX Output Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#latex-preamble-definitions">4.2.2. LaTeX preamble definitions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#full-conf-py-script">4.3. Full <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-documentation-generator-configuration">4.4. General Documentation Generator Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#output-options">4.4.1. Output Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#output-directory">4.4.2. Output Directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation-compiler">4.4.3. Documentation Compiler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#makefile-wrapper">4.4.4. <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> Wrapper</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#full-docgen-py-script">4.5. Full <code class="docutils literal notranslate"><span class="pre">docgen.py</span></code> Script</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rtxt.html">5. reStructuredText Markup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="github.html">6. Publishing on Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">7. Main Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appx.html">8. Appendix: My LaTex Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Statistics Python Library API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>4. Sphinx Configuration</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/runawayhorse001/statspy/blob/master/doc/sphinx.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sphinx-configuration">
+<span id="sphinx"></span><h1>4. Sphinx Configuration<a class="headerlink" href="#sphinx-configuration" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">I heavily borrowed, modified and used the configuration in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> and <code class="docutils literal notranslate"><span class="pre">docgen.py</span></code> of <a class="reference external" href="https://github.com/Theano/Theano">Theano package project</a>. I will keep all the comments from Theano team and the coryrights of those files belong to Theano team.</p>
+</div>
+<div class="section" id="general-html-configuration">
+<h2>4.1. General HTML Configuration<a class="headerlink" href="#general-html-configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general-evironment-infomation">
+<h3>4.1.1. General Evironment Infomation<a class="headerlink" href="#general-evironment-infomation" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Sphinx extension</li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add any Sphinx extension module names here, as strings. They can be</span>
+<span class="c1"># extensions coming with Sphinx (named &#39;sphinx.ext.*&#39;) or your custom ones.</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx.ext.todo&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx.ext.doctest&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx.ext.napoleon&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx.ext.linkcode&#39;</span><span class="p">]</span>
+
+<span class="n">todo_include_todos</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">napoleon_google_docstring</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="n">napoleon_include_special_with_doc</span> <span class="o">=</span> <span class="bp">False</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>Math formula support</li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># We do it like this to support multiple sphinx version without having warning.</span>
+<span class="c1"># Our buildbot consider warning as error.</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">sphinx.ext</span> <span class="kn">import</span> <span class="n">imgmath</span>
+    <span class="n">extensions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;sphinx.ext.imgmath&#39;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">sphinx.ext</span> <span class="kn">import</span> <span class="n">pngmath</span>
+        <span class="n">extensions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;sphinx.ext.pngmath&#39;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li>Included and excluded folders options</li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add any paths that contain templates here, relative to this directory.</span>
+<span class="n">templates_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.templates&#39;</span><span class="p">]</span>
+
+<span class="c1"># List of directories, relative to source directories, that shouldn&#39;t be</span>
+<span class="c1"># searched for source files.</span>
+<span class="n">exclude_dirs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;images&#39;</span><span class="p">,</span> <span class="s1">&#39;scripts&#39;</span><span class="p">,</span> <span class="s1">&#39;sandbox&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li>Image math formula preamble</li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># If false, no module index is generated.</span>
+<span class="c1">#latex_use_modindex = True</span>
+
+<span class="n">default_role</span> <span class="o">=</span> <span class="s1">&#39;math&#39;</span>
+<span class="n">pngmath_divpng_args</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;-gamma 1.5&#39;</span><span class="p">,</span><span class="s1">&#39;-D 110&#39;</span><span class="p">]</span>
+<span class="c1">#pngmath_divpng_args = [&#39;-gamma&#39;, &#39;1.5&#39;, &#39;-D&#39;, &#39;110&#39;, &#39;-bg&#39;, &#39;Transparent&#39;]</span>
+<span class="n">imgmath_latex_preamble</span> <span class="o">=</span>  <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amsmath}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{mathtools}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amsfonts}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amssymb}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{dsfont}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">Z{</span><span class="se">\\</span><span class="s1">mathbb{Z}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">R{</span><span class="se">\\</span><span class="s1">mathbb{R}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">bX{</span><span class="se">\\</span><span class="s1">mathbf{X}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">X{</span><span class="se">\\</span><span class="s1">mathbf{X}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">By{</span><span class="se">\\</span><span class="s1">mathbf{y}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">Bbeta{</span><span class="se">\\</span><span class="s1">boldsymbol{</span><span class="se">\\</span><span class="s1">beta}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">U{</span><span class="se">\\</span><span class="s1">mathbf{U}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">V{</span><span class="se">\\</span><span class="s1">mathbf{V}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">V1{</span><span class="se">\\</span><span class="s1">mathds{1}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">hU{</span><span class="se">\\</span><span class="s1">mathbf{\hat{U}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">hS{</span><span class="se">\\</span><span class="s1">mathbf{\hat{\Sigma}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">hV{</span><span class="se">\\</span><span class="s1">mathbf{\hat{V}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">E{</span><span class="se">\\</span><span class="s1">mathbf{E}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">F{</span><span class="se">\\</span><span class="s1">mathbf{F}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">x{</span><span class="se">\\</span><span class="s1">mathbf{x}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">h{</span><span class="se">\\</span><span class="s1">mathbf{h}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">v{</span><span class="se">\\</span><span class="s1">mathbf{v}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">nv{</span><span class="se">\\</span><span class="s1">mathbf{v^{{</span><span class="se">\b</span><span class="s1">f -}}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">nh{</span><span class="se">\\</span><span class="s1">mathbf{h^{{</span><span class="se">\b</span><span class="s1">f -}}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">s{</span><span class="se">\\</span><span class="s1">mathbf{s}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">b{</span><span class="se">\\</span><span class="s1">mathbf{b}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">c{</span><span class="se">\\</span><span class="s1">mathbf{c}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">W{</span><span class="se">\\</span><span class="s1">mathbf{W}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">C{</span><span class="se">\\</span><span class="s1">mathbf{C}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">P{</span><span class="se">\\</span><span class="s1">mathbf{P}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">T{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal T}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">B{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal B}}</span><span class="se">\n</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="general-project-infomation">
+<h3>4.1.2. General Project Infomation<a class="headerlink" href="#general-project-infomation" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>The suffix of source filenames</li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># The suffix of source filenames.</span>
+<span class="n">source_suffix</span> <span class="o">=</span> <span class="s1">&#39;.rst&#39;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>The master toctree document</li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># The master toctree document.</span>
+<span class="n">master_doc</span> <span class="o">=</span> <span class="s1">&#39;index&#39;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li>General substitutions</li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># General substitutions.</span>
+<span class="n">project</span> <span class="o">=</span> <span class="s1">&#39;Sphinx with Github Webpages&#39;</span>
+<span class="n">copyright</span> <span class="o">=</span> <span class="s1">&#39;2019, Wenqiang Feng&#39;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li>Version and date format</li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># We need this hokey-pokey because versioneer needs the current</span>
+<span class="c1"># directory to be the root of the project to work.</span>
+<span class="c1"># The short X.Y version.</span>
+<span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;1.00&#39;</span>
+<span class="c1"># The full version, including alpha/beta/rc tags.</span>
+<span class="n">release</span> <span class="o">=</span> <span class="s1">&#39;1.00&#39;</span>
+
+<span class="c1"># There are two options for replacing |today|: either, you set today to some</span>
+<span class="c1"># non-false value, then it is used:</span>
+<span class="c1">#today = &#39;&#39;</span>
+<span class="c1"># Else, today_fmt is used as the format for a strftime call.</span>
+<span class="n">today_fmt</span> <span class="o">=</span> <span class="s1">&#39;%B </span><span class="si">%d</span><span class="s1">, %Y&#39;</span>
+
+<span class="c1"># Add any paths that contain custom static files (such as style sheets) here,</span>
+<span class="c1"># relative to this directory. They are copied after the builtin static files,</span>
+<span class="c1"># so a file named &quot;default.css&quot; will overwrite the builtin &quot;default.css&quot;.</span>
+<span class="n">html_static_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;images&#39;</span><span class="p">]</span>
+
+<span class="c1"># If not &#39;&#39;, a &#39;Last updated on:&#39; timestamp is inserted at every page bottom,</span>
+<span class="c1"># using the given strftime format.</span>
+<span class="n">html_last_updated_fmt</span> <span class="o">=</span> <span class="s1">&#39;%b </span><span class="si">%d</span><span class="s1">, %Y&#39;</span>
+
+<span class="c1"># If true, SmartyPants will be used to convert quotes and dashes to</span>
+<span class="c1"># typographically correct entities.</span>
+<span class="n">html_use_smartypants</span> <span class="o">=</span> <span class="bp">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="general-latex-configuration">
+<h2>4.2. General LaTex Configuration<a class="headerlink" href="#general-latex-configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general-latex-output-options">
+<h3>4.2.1. General LaTeX Output Options<a class="headerlink" href="#general-latex-output-options" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Options for LaTeX output</span>
+<span class="c1"># ------------------------</span>
+
+<span class="n">latex_elements</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1"># The paper size (&#39;letter&#39; or &#39;a4&#39;).</span>
+    <span class="c1">#latex_paper_size = &#39;a4&#39;,</span>
+
+    <span class="c1"># The font size (&#39;10pt&#39;, &#39;11pt&#39; or &#39;12pt&#39;).</span>
+    <span class="s1">&#39;pointsize&#39;</span><span class="p">:</span> <span class="s1">&#39;12pt&#39;</span><span class="p">,</span>
+
+    <span class="c1"># Additional stuff for the LaTeX preamble.</span>
+    <span class="c1">#latex_preamble = &#39;&#39;,</span>
+<span class="p">}</span>
+
+<span class="c1"># Grouping the document tree into LaTeX files. List of tuples</span>
+<span class="c1"># (source start file, target name, title, author, document class</span>
+<span class="c1"># [howto/manual]).</span>
+<span class="n">latex_documents</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">,</span> <span class="s1">&#39;sphinxgithub.tex&#39;</span><span class="p">,</span> <span class="s1">&#39;Sphinx Github Webpage Tutorials&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Wenqiang Feng&#39;</span><span class="p">,</span> <span class="s1">&#39;manual&#39;</span><span class="p">),</span>
+<span class="p">]</span>
+<span class="c1"># The name of an image file (relative to this directory) to place at the top of</span>
+<span class="c1"># the title page.</span>
+<span class="n">latex_logo</span> <span class="o">=</span> <span class="s1">&#39;images/logo.png&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="latex-preamble-definitions">
+<h3>4.2.2. LaTeX preamble definitions<a class="headerlink" href="#latex-preamble-definitions" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#latex_elements[&#39;preamble&#39;] = &#39;\usepackage{xcolor}&#39;</span>
+<span class="c1"># Additional stuff for the LaTeX preamble.</span>
+<span class="c1">#latex_preamble</span>
+<span class="n">latex_elements</span><span class="p">[</span><span class="s1">&#39;preamble&#39;</span><span class="p">]</span> <span class="o">=</span>  <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amsmath}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{mathtools}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amsfonts}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amssymb}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{dsfont}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">Z{</span><span class="se">\\</span><span class="s1">mathbb{Z}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">R{</span><span class="se">\\</span><span class="s1">mathbb{R}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">bX{</span><span class="se">\\</span><span class="s1">mathbf{X}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">X{</span><span class="se">\\</span><span class="s1">mathbf{X}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">By{</span><span class="se">\\</span><span class="s1">mathbf{y}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">Bbeta{</span><span class="se">\\</span><span class="s1">boldsymbol{</span><span class="se">\\</span><span class="s1">beta}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">bU{</span><span class="se">\\</span><span class="s1">mathbf{U}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">bV{</span><span class="se">\\</span><span class="s1">mathbf{V}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">V1{</span><span class="se">\\</span><span class="s1">mathds{1}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">hU{</span><span class="se">\\</span><span class="s1">mathbf{\hat{U}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">hS{</span><span class="se">\\</span><span class="s1">mathbf{\hat{\Sigma}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">hV{</span><span class="se">\\</span><span class="s1">mathbf{\hat{V}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">E{</span><span class="se">\\</span><span class="s1">mathbf{E}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">F{</span><span class="se">\\</span><span class="s1">mathbf{F}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">x{</span><span class="se">\\</span><span class="s1">mathbf{x}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">h{</span><span class="se">\\</span><span class="s1">mathbf{h}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">v{</span><span class="se">\\</span><span class="s1">mathbf{v}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">nv{</span><span class="se">\\</span><span class="s1">mathbf{v^{{</span><span class="se">\b</span><span class="s1">f -}}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">nh{</span><span class="se">\\</span><span class="s1">mathbf{h^{{</span><span class="se">\b</span><span class="s1">f -}}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">s{</span><span class="se">\\</span><span class="s1">mathbf{s}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">b{</span><span class="se">\\</span><span class="s1">mathbf{b}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">c{</span><span class="se">\\</span><span class="s1">mathbf{c}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">W{</span><span class="se">\\</span><span class="s1">mathbf{W}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">C{</span><span class="se">\\</span><span class="s1">mathbf{C}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">P{</span><span class="se">\\</span><span class="s1">mathbf{P}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">T{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal T}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">B{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal B}}</span><span class="se">\n</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="full-conf-py-script">
+<h2>4.3. Full <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> Script<a class="headerlink" href="#full-conf-py-script" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1">#############################################################################</span>
+<span class="c1"># I heavily borrowed, modified and used the configuration in conf.py of Theano</span>
+<span class="c1"># package project. I will keep all the comments from Theano team and the </span>
+<span class="c1"># coryright of this file belongs to Theano team. </span>
+<span class="c1"># reference: </span>
+<span class="c1">#           </span>
+<span class="c1"># Theano repository: https://github.com/Theano/Theano</span>
+<span class="c1"># conf.py: https://github.com/Theano/Theano/blob/master/doc/conf.py </span>
+<span class="c1">##############################################################################</span>
+<span class="c1"># theano documentation build configuration file, created by</span>
+<span class="c1"># sphinx-quickstart on Tue Oct  7 16:34:06 2008.</span>
+<span class="c1">#</span>
+<span class="c1"># This file is execfile()d with the current directory set to its containing</span>
+<span class="c1"># directory.</span>
+<span class="c1">#</span>
+<span class="c1"># The contents of this file are pickled, so don&#39;t put values in the namespace</span>
+<span class="c1"># that aren&#39;t pickleable (module imports are okay, they&#39;re removed</span>
+<span class="c1"># automatically).</span>
+<span class="c1">#</span>
+<span class="c1"># All configuration values have a default value; values that are commented out</span>
+<span class="c1"># serve to show the default value.</span>
+
+<span class="c1"># If your extensions are in another directory, add it here. If the directory</span>
+<span class="c1"># is relative to the documentation root, use os.path.abspath to make it</span>
+<span class="c1"># absolute, like shown here.</span>
+<span class="c1">#sys.path.append(os.path.abspath(&#39;some/directory&#39;))</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">absolute_import</span><span class="p">,</span> <span class="n">print_function</span><span class="p">,</span> <span class="n">division</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">theano_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">theano_path</span><span class="p">))</span>
+<span class="kn">import</span> <span class="nn">versioneer</span>
+
+<span class="c1"># General configuration</span>
+<span class="c1"># ---------------------</span>
+
+<span class="c1"># Add any Sphinx extension module names here, as strings. They can be</span>
+<span class="c1"># extensions coming with Sphinx (named &#39;sphinx.ext.*&#39;) or your custom ones.</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx.ext.todo&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx.ext.doctest&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx.ext.napoleon&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx.ext.linkcode&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx.ext.intersphinx&#39;</span> 
+              <span class="p">]</span>
+
+<span class="n">todo_include_todos</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">napoleon_google_docstring</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="n">napoleon_include_special_with_doc</span> <span class="o">=</span> <span class="bp">False</span>
+
+
+<span class="c1"># We do it like this to support multiple sphinx version without having warning.</span>
+<span class="c1"># Our buildbot consider warning as error.</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">sphinx.ext</span> <span class="kn">import</span> <span class="n">imgmath</span>
+    <span class="n">extensions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;sphinx.ext.imgmath&#39;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">sphinx.ext</span> <span class="kn">import</span> <span class="n">pngmath</span>
+        <span class="n">extensions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;sphinx.ext.pngmath&#39;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+
+<span class="c1"># Add any paths that contain templates here, relative to this directory.</span>
+<span class="c1">#templates_path = [&#39;.templates&#39;]</span>
+
+<span class="c1"># The suffix of source filenames.</span>
+<span class="n">source_suffix</span> <span class="o">=</span> <span class="s1">&#39;.rst&#39;</span>
+
+<span class="c1"># The master toctree document.</span>
+<span class="n">master_doc</span> <span class="o">=</span> <span class="s1">&#39;index&#39;</span>
+
+<span class="c1"># General substitutions.</span>
+<span class="n">project</span> <span class="o">=</span> <span class="s1">&#39;Statistics Python Library API&#39;</span>
+<span class="n">copyright</span> <span class="o">=</span> <span class="s1">&#39;2019, Wenqiang Feng&#39;</span>
+
+<span class="c1"># The default replacements for |version| and |release|, also used in various</span>
+<span class="c1"># other places throughout the built documents.</span>
+<span class="c1">#</span>
+
+<span class="c1"># We need this hokey-pokey because versioneer needs the current</span>
+<span class="c1"># directory to be the root of the project to work.</span>
+<span class="c1"># The short X.Y version.</span>
+<span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;1.00&#39;</span>
+<span class="c1"># The full version, including alpha/beta/rc tags.</span>
+<span class="n">release</span> <span class="o">=</span> <span class="s1">&#39;1.00&#39;</span>
+
+<span class="c1"># There are two options for replacing |today|: either, you set today to some</span>
+<span class="c1"># non-false value, then it is used:</span>
+<span class="c1">#today = &#39;&#39;</span>
+<span class="c1"># Else, today_fmt is used as the format for a strftime call.</span>
+<span class="n">today_fmt</span> <span class="o">=</span> <span class="s1">&#39;%B </span><span class="si">%d</span><span class="s1">, %Y&#39;</span>
+
+<span class="c1"># List of documents that shouldn&#39;t be included in the build.</span>
+<span class="c1">#unused_docs = []</span>
+
+<span class="c1"># List of directories, relative to source directories, that shouldn&#39;t be</span>
+<span class="c1"># searched for source files.</span>
+<span class="n">exclude_dirs</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;images&#39;</span><span class="p">,</span> <span class="s1">&#39;scripts&#39;</span><span class="p">,</span> <span class="s1">&#39;sandbox&#39;</span><span class="p">]</span>
+
+<span class="c1"># The reST default role (used for this markup: `text`) to use for all</span>
+<span class="c1"># documents.</span>
+<span class="c1">#default_role = None</span>
+
+<span class="c1"># If true, &#39;()&#39; will be appended to :func: etc. cross-reference text.</span>
+<span class="c1">#add_function_parentheses = True</span>
+
+<span class="c1"># If true, the current module name will be prepended to all description</span>
+<span class="c1"># unit titles (such as .. function::).</span>
+<span class="c1">#add_module_names = True</span>
+
+<span class="c1"># If true, sectionauthor and moduleauthor directives will be shown in the</span>
+<span class="c1"># output. They are ignored by default.</span>
+<span class="c1">#show_authors = False</span>
+
+<span class="c1"># The name of the Pygments (syntax highlighting) style to use.</span>
+<span class="n">pygments_style</span> <span class="o">=</span> <span class="s1">&#39;sphinx&#39;</span>
+
+
+<span class="c1"># Options for HTML output</span>
+<span class="c1"># -----------------------</span>
+
+<span class="c1"># Enable link of &#39;View page source&#39;</span>
+<span class="c1">#html_show_sourcelink = False</span>
+<span class="c1"># Add &#39;Edit on Github&#39; link instead of &#39;View page source&#39;</span>
+<span class="c1"># reference:https://docs.readthedocs.io/en/latest/vcs.html</span>
+<span class="n">html_context</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1"># Enable the &quot;Edit in GitHub link within the header of each page.</span>
+    <span class="s1">&#39;display_github&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+    <span class="c1"># Set the following variables to generate the resulting github URL for each page. </span>
+    <span class="c1"># Format Template: https://{{ github_host|default(&quot;github.com&quot;) }}/{{ github_user }}</span>
+    <span class="c1">#/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}</span>
+    <span class="c1">#https://github.com/runawayhorse001/SphinxGithub/blob/master/doc/index.rst</span>
+    <span class="s1">&#39;github_user&#39;</span><span class="p">:</span> <span class="s1">&#39;runawayhorse001&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;github_repo&#39;</span><span class="p">:</span> <span class="s1">&#39;statspy&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;github_version&#39;</span><span class="p">:</span> <span class="s1">&#39;master/doc/&#39;</span> <span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># {% if display_github %}</span>
+<span class="c1">#     &lt;li&gt;&lt;a href=&quot;https://github.com/{{ github_user }}/{{ github_repo }}</span>
+<span class="c1">#     /tree/{{ github_version }}{{ conf_py_path }}{{ pagename }}.rst&quot;&gt;</span>
+<span class="c1">#     Show on GitHub&lt;/a&gt;&lt;/li&gt;</span>
+<span class="c1"># {% endif %}</span>
+
+<span class="c1"># The style sheet to use for HTML and HTML Help pages. A file of that name</span>
+<span class="c1"># must exist either in Sphinx&#39; static/ path, or in one of the custom paths</span>
+<span class="c1"># given in html_static_path.</span>
+<span class="c1">#html_style = &#39;default.css&#39;</span>
+<span class="c1"># html_theme = &#39;sphinxdoc&#39;</span>
+
+<span class="c1"># Read the docs style:</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;READTHEDOCS&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;True&#39;</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">sphinx_rtd_theme</span>
+    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+        <span class="k">pass</span>  <span class="c1"># assume we have sphinx &gt;= 1.3</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="n">sphinx_rtd_theme</span><span class="o">.</span><span class="n">get_html_theme_path</span><span class="p">()]</span>
+    <span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
+
+<span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">add_stylesheet</span><span class="p">(</span><span class="s2">&quot;fix_rtd.css&quot;</span><span class="p">)</span>
+
+<span class="c1"># The name for this set of Sphinx documents.  If None, it defaults to</span>
+<span class="c1"># &quot;&lt;project&gt; v&lt;release&gt; documentation&quot;.</span>
+<span class="c1">#html_title = None</span>
+
+<span class="c1"># If true, &quot;Created using Sphinx&quot; is shown in the HTML footer. Default is True.</span>
+<span class="c1">#html_show_sphinx = False</span>
+
+<span class="c1"># A shorter title for the navigation bar.  Default is the same as html_title.</span>
+<span class="c1">#html_short_title = None</span>
+
+<span class="c1"># The name of an image file (within the static path) to place at the top of</span>
+<span class="c1"># the sidebar.</span>
+<span class="c1">#html_logo = &#39;images/theano_logo_allwhite_210x70.png&#39;</span>
+
+<span class="c1"># The name of an image file (within the static path) to use as favicon of the</span>
+<span class="c1"># docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32</span>
+<span class="c1"># pixels large.</span>
+<span class="n">html_favicon</span> <span class="o">=</span> <span class="s1">&#39;images/icon.ico&#39;</span>
+
+<span class="c1"># Add any paths that contain custom static files (such as style sheets) here,</span>
+<span class="c1"># relative to this directory. They are copied after the builtin static files,</span>
+<span class="c1"># so a file named &quot;default.css&quot; will overwrite the builtin &quot;default.css&quot;.</span>
+<span class="n">html_static_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;images&#39;</span><span class="p">]</span>
+
+<span class="c1"># If not &#39;&#39;, a &#39;Last updated on:&#39; timestamp is inserted at every page bottom,</span>
+<span class="c1"># using the given strftime format.</span>
+<span class="n">html_last_updated_fmt</span> <span class="o">=</span> <span class="s1">&#39;%b </span><span class="si">%d</span><span class="s1">, %Y&#39;</span>
+
+<span class="c1"># If true, SmartyPants will be used to convert quotes and dashes to</span>
+<span class="c1"># typographically correct entities.</span>
+<span class="n">html_use_smartypants</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="c1"># Custom sidebar templates, maps document names to template names.</span>
+<span class="c1">#html_sidebars = {}</span>
+
+<span class="c1"># Additional templates that should be rendered to pages, maps page names to</span>
+<span class="c1"># template names.</span>
+<span class="c1">#html_additional_pages = {}</span>
+
+<span class="c1"># If false, no module index is generated.</span>
+<span class="c1">#html_use_modindex = True</span>
+
+<span class="c1"># If false, no index is generated.</span>
+<span class="c1">#html_use_index = True</span>
+
+<span class="c1"># If true, the index is split into individual pages for each letter.</span>
+<span class="c1">#html_split_index = False</span>
+
+<span class="c1"># If true, the reST sources are included in the HTML build as _sources/&lt;name&gt;.</span>
+<span class="c1">#html_copy_source = True</span>
+
+<span class="c1"># If true, an OpenSearch description file will be output, and all pages will</span>
+<span class="c1"># contain a &lt;link&gt; tag referring to it.  The value of this option must be the</span>
+<span class="c1"># base URL from which the finished HTML is served.</span>
+<span class="c1">#html_use_opensearch = &#39;&#39;</span>
+
+<span class="c1"># If nonempty, this is the file name suffix for HTML files (e.g. &quot;.xhtml&quot;).</span>
+<span class="c1">#html_file_suffix = &#39;&#39;</span>
+
+<span class="c1"># Output file base name for HTML help builder.</span>
+<span class="c1">#htmlhelp_basename = &#39;spnixgitdoc&#39;</span>
+
+<span class="c1"># Options for the linkcode extension</span>
+<span class="c1"># ----------------------------------</span>
+<span class="c1"># Resolve function</span>
+<span class="c1"># This function is used to populate the (source) links in the API</span>
+<span class="k">def</span> <span class="nf">linkcode_resolve</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">info</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">find_source</span><span class="p">():</span>
+        <span class="c1"># try to find the file and line number, based on code from numpy:</span>
+        <span class="c1"># https://github.com/numpy/numpy/blob/master/doc/source/conf.py#L286</span>
+        <span class="n">obj</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;module&#39;</span><span class="p">]]</span>
+        <span class="k">for</span> <span class="n">part</span> <span class="ow">in</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;fullname&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">):</span>
+            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">part</span><span class="p">)</span>
+        <span class="kn">import</span> <span class="nn">inspect</span>
+        <span class="kn">import</span> <span class="nn">os</span>
+        <span class="n">fn</span> <span class="o">=</span> <span class="n">inspect</span><span class="o">.</span><span class="n">getsourcefile</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+        <span class="n">fn</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">theano</span><span class="o">.</span><span class="vm">__file__</span><span class="p">))</span>
+        <span class="n">source</span><span class="p">,</span> <span class="n">lineno</span> <span class="o">=</span> <span class="n">inspect</span><span class="o">.</span><span class="n">getsourcelines</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">fn</span><span class="p">,</span> <span class="n">lineno</span><span class="p">,</span> <span class="n">lineno</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">source</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">if</span> <span class="n">domain</span> <span class="o">!=</span> <span class="s1">&#39;py&#39;</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;module&#39;</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="bp">None</span>
+    <span class="c1"># try:</span>
+    <span class="c1">#     filename = &#39;theano/%s#L%d-L%d&#39; % find_source()</span>
+    <span class="c1"># except Exception:</span>
+    <span class="c1">#     filename = info[&#39;module&#39;].replace(&#39;.&#39;, &#39;/&#39;) + &#39;.py&#39;</span>
+    <span class="kn">import</span> <span class="nn">subprocess</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">([</span><span class="s1">&#39;git&#39;</span><span class="p">,</span> <span class="s1">&#39;rev-parse&#39;</span><span class="p">,</span> <span class="s1">&#39;HEAD&#39;</span><span class="p">],</span>
+                           <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span>
+                           <span class="n">universal_newlines</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">communicate</span><span class="p">()[</span><span class="mi">0</span><span class="p">][:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="s2">&quot;https://github.com/runawayhorse001/</span><span class="si">%s</span><span class="s2">/</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">tag</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+
+<span class="c1"># Options for LaTeX output</span>
+<span class="c1"># ------------------------</span>
+
+<span class="n">latex_elements</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1"># The paper size (&#39;letter&#39; or &#39;a4&#39;).</span>
+    <span class="c1">#latex_paper_size = &#39;a4&#39;,</span>
+
+    <span class="c1"># The font size (&#39;10pt&#39;, &#39;11pt&#39; or &#39;12pt&#39;).</span>
+    <span class="s1">&#39;pointsize&#39;</span><span class="p">:</span> <span class="s1">&#39;12pt&#39;</span><span class="p">,</span>
+
+    <span class="c1"># Additional stuff for the LaTeX preamble.</span>
+    <span class="c1">#latex_preamble = &#39;&#39;,</span>
+<span class="p">}</span>
+
+<span class="c1"># Grouping the document tree into LaTeX files. List of tuples</span>
+<span class="c1"># (source start file, target name, title, author, document class</span>
+<span class="c1"># [howto/manual]).</span>
+<span class="n">latex_documents</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">,</span> <span class="s1">&#39;statspy.tex&#39;</span><span class="p">,</span> <span class="s1">&#39;Statistics Python Library API&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Wenqiang Feng&#39;</span><span class="p">,</span> <span class="s1">&#39;manual&#39;</span><span class="p">),</span>
+<span class="p">]</span>
+<span class="c1"># The name of an image file (relative to this directory) to place at the top of</span>
+<span class="c1"># the title page.</span>
+<span class="c1">#latex_logo = &#39;images/logo.png&#39;</span>
+<span class="c1"># The name of an image file (relative to this directory) to place at the top of</span>
+<span class="c1"># the title page.</span>
+<span class="c1">#latex_logo = &#39;images/snake_theta2-trans.png&#39;</span>
+<span class="c1">#latex_logo = &#39;images/theano_logo_allblue_200x46.png&#39;</span>
+
+<span class="c1"># For &quot;manual&quot; documents, if this is true, then toplevel headings are parts,</span>
+<span class="c1"># not chapters.</span>
+<span class="c1">#latex_use_parts = False</span>
+
+<span class="c1"># Documents to append as an appendix to all manuals.</span>
+<span class="c1">#latex_appendices = []</span>
+
+<span class="c1"># If false, no module index is generated.</span>
+<span class="c1">#latex_use_modindex = True</span>
+
+
+<span class="c1">#latex_elements[&#39;preamble&#39;] = &#39;\usepackage{xcolor}&#39;</span>
+<span class="c1"># Additional stuff for the LaTeX preamble.</span>
+<span class="c1">#latex_preamble </span>
+<span class="n">latex_elements</span><span class="p">[</span><span class="s1">&#39;preamble&#39;</span><span class="p">]</span> <span class="o">=</span>  <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amsmath}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{mathtools}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amsfonts}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amssymb}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{dsfont}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">Z{</span><span class="se">\\</span><span class="s1">mathbb{Z}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">R{</span><span class="se">\\</span><span class="s1">mathbb{R}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">bX{</span><span class="se">\\</span><span class="s1">mathbf{X}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">X{</span><span class="se">\\</span><span class="s1">mathbf{X}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">By{</span><span class="se">\\</span><span class="s1">mathbf{y}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">Bbeta{</span><span class="se">\\</span><span class="s1">boldsymbol{</span><span class="se">\\</span><span class="s1">beta}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">bU{</span><span class="se">\\</span><span class="s1">mathbf{U}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">bV{</span><span class="se">\\</span><span class="s1">mathbf{V}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">V1{</span><span class="se">\\</span><span class="s1">mathds{1}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">hU{</span><span class="se">\\</span><span class="s1">mathbf{\hat{U}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">hS{</span><span class="se">\\</span><span class="s1">mathbf{\hat{\Sigma}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">hV{</span><span class="se">\\</span><span class="s1">mathbf{\hat{V}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">E{</span><span class="se">\\</span><span class="s1">mathbf{E}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">F{</span><span class="se">\\</span><span class="s1">mathbf{F}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">x{</span><span class="se">\\</span><span class="s1">mathbf{x}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">h{</span><span class="se">\\</span><span class="s1">mathbf{h}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">v{</span><span class="se">\\</span><span class="s1">mathbf{v}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">nv{</span><span class="se">\\</span><span class="s1">mathbf{v^{{</span><span class="se">\b</span><span class="s1">f -}}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">nh{</span><span class="se">\\</span><span class="s1">mathbf{h^{{</span><span class="se">\b</span><span class="s1">f -}}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">s{</span><span class="se">\\</span><span class="s1">mathbf{s}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">b{</span><span class="se">\\</span><span class="s1">mathbf{b}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">c{</span><span class="se">\\</span><span class="s1">mathbf{c}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">W{</span><span class="se">\\</span><span class="s1">mathbf{W}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">C{</span><span class="se">\\</span><span class="s1">mathbf{C}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">P{</span><span class="se">\\</span><span class="s1">mathbf{P}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">T{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal T}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">B{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal B}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">euler{\ e^{i\pi} + 1 = 0}</span><span class="se">\n</span><span class="s1">&#39;</span>
+
+<span class="c1"># Documents to append as an appendix to all manuals.</span>
+<span class="c1">#latex_appendices = []</span>
+
+<span class="c1"># If false, no module index is generated.</span>
+<span class="c1">#latex_use_modindex = True</span>
+
+<span class="n">default_role</span> <span class="o">=</span> <span class="s1">&#39;math&#39;</span>
+<span class="n">ingmath_divpng_args</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;-gamma 1.5&#39;</span><span class="p">,</span><span class="s1">&#39;-D 110&#39;</span><span class="p">]</span>
+<span class="c1">#pngmath_divpng_args = [&#39;-gamma&#39;, &#39;1.5&#39;, &#39;-D&#39;, &#39;110&#39;, &#39;-bg&#39;, &#39;Transparent&#39;] </span>
+<span class="n">imgmath_latex_preamble</span> <span class="o">=</span>  <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amsmath}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{mathtools}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amsfonts}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amssymb}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{dsfont}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">Z{</span><span class="se">\\</span><span class="s1">mathbb{Z}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">R{</span><span class="se">\\</span><span class="s1">mathbb{R}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">bX{</span><span class="se">\\</span><span class="s1">mathbf{X}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">X{</span><span class="se">\\</span><span class="s1">mathbf{X}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">By{</span><span class="se">\\</span><span class="s1">mathbf{y}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">Bbeta{</span><span class="se">\\</span><span class="s1">boldsymbol{</span><span class="se">\\</span><span class="s1">beta}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">U{</span><span class="se">\\</span><span class="s1">mathbf{U}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">V{</span><span class="se">\\</span><span class="s1">mathbf{V}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">V1{</span><span class="se">\\</span><span class="s1">mathds{1}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">hU{</span><span class="se">\\</span><span class="s1">mathbf{\hat{U}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">hS{</span><span class="se">\\</span><span class="s1">mathbf{\hat{\Sigma}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">hV{</span><span class="se">\\</span><span class="s1">mathbf{\hat{V}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">E{</span><span class="se">\\</span><span class="s1">mathbf{E}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">F{</span><span class="se">\\</span><span class="s1">mathbf{F}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">x{</span><span class="se">\\</span><span class="s1">mathbf{x}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">h{</span><span class="se">\\</span><span class="s1">mathbf{h}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">v{</span><span class="se">\\</span><span class="s1">mathbf{v}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">nv{</span><span class="se">\\</span><span class="s1">mathbf{v^{{</span><span class="se">\b</span><span class="s1">f -}}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">nh{</span><span class="se">\\</span><span class="s1">mathbf{h^{{</span><span class="se">\b</span><span class="s1">f -}}}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">s{</span><span class="se">\\</span><span class="s1">mathbf{s}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">b{</span><span class="se">\\</span><span class="s1">mathbf{b}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">c{</span><span class="se">\\</span><span class="s1">mathbf{c}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">W{</span><span class="se">\\</span><span class="s1">mathbf{W}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">C{</span><span class="se">\\</span><span class="s1">mathbf{C}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">P{</span><span class="se">\\</span><span class="s1">mathbf{P}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">T{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal T}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">B{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal B}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">euler{\ e^{i\pi} + 1 = 0}</span><span class="se">\n</span><span class="s1">&#39;</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="general-documentation-generator-configuration">
+<h2>4.4. General Documentation Generator Configuration<a class="headerlink" href="#general-documentation-generator-configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="output-options">
+<h3>4.4.1. Output Options<a class="headerlink" href="#output-options" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">throot</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span>
+     <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">))</span>
+
+ <span class="n">options</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">bool</span><span class="p">)</span>
+ <span class="n">opts</span><span class="p">,</span> <span class="n">args</span> <span class="o">=</span> <span class="n">getopt</span><span class="o">.</span><span class="n">getopt</span><span class="p">(</span>
+     <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span>
+     <span class="s1">&#39;o:f:&#39;</span><span class="p">,</span>
+     <span class="p">[</span><span class="s1">&#39;rst&#39;</span><span class="p">,</span> <span class="s1">&#39;help&#39;</span><span class="p">,</span> <span class="s1">&#39;nopdf&#39;</span><span class="p">,</span> <span class="s1">&#39;cache&#39;</span><span class="p">,</span> <span class="s1">&#39;check&#39;</span><span class="p">,</span> <span class="s1">&#39;test&#39;</span><span class="p">])</span>
+ <span class="n">options</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="nb">dict</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">or</span> <span class="bp">True</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">opts</span><span class="p">))</span>
+ <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--help&#39;</span><span class="p">]:</span>
+     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Usage: </span><span class="si">%s</span><span class="s1"> [OPTIONS] [files...]&#39;</span> <span class="o">%</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  -o &lt;dir&gt;: output the html files in the specified dir&#39;</span><span class="p">)</span>
+     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  --cache: use the doctree cache&#39;</span><span class="p">)</span>
+     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  --rst: only compile the doc (requires sphinx)&#39;</span><span class="p">)</span>
+     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  --nopdf: do not produce a PDF file from the doc, only HTML&#39;</span><span class="p">)</span>
+     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  --test: run all the code samples in the documentaton&#39;</span><span class="p">)</span>
+     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  --check: treat warnings as errors&#39;</span><span class="p">)</span>
+     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  --help: this help&#39;</span><span class="p">)</span>
+     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;If one or more files are specified after the options then only &#39;</span>
+           <span class="s1">&#39;those files will be built. Otherwise the whole tree is &#39;</span>
+           <span class="s1">&#39;processed. Specifying files will implies --cache.&#39;</span><span class="p">)</span>
+     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+ <span class="k">if</span> <span class="ow">not</span><span class="p">(</span><span class="n">options</span><span class="p">[</span><span class="s1">&#39;--rst&#39;</span><span class="p">]</span> <span class="ow">or</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--test&#39;</span><span class="p">]):</span>
+     <span class="c1"># Default is now rst</span>
+     <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--rst&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="output-directory">
+<h3>4.4.2. Output Directory<a class="headerlink" href="#output-directory" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mkdir</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+<span class="c1"># create the putput folder docs, since github page will use /docs folder for Github page.</span>
+<span class="n">outdir</span> <span class="o">=</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;-o&#39;</span><span class="p">]</span> <span class="ow">or</span> <span class="p">(</span><span class="n">throot</span> <span class="o">+</span> <span class="s1">&#39;/docs&#39;</span><span class="p">)</span>
+<span class="c1"># create the output folder latex</span>
+<span class="n">latexdir</span> <span class="o">=</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;-o&#39;</span><span class="p">]</span> <span class="ow">or</span> <span class="p">(</span><span class="n">throot</span> <span class="o">+</span> <span class="s1">&#39;/latex&#39;</span><span class="p">)</span>
+
+<span class="n">files</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">args</span><span class="p">]</span>
+<span class="n">currentdir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+<span class="n">mkdir</span><span class="p">(</span><span class="n">outdir</span><span class="p">)</span>
+<span class="n">mkdir</span><span class="p">(</span><span class="n">latexdir</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">outdir</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="documentation-compiler">
+<h3>4.4.3. Documentation Compiler<a class="headerlink" href="#documentation-compiler" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">call_sphinx</span><span class="p">(</span><span class="n">builder</span><span class="p">,</span> <span class="n">workdir</span><span class="p">):</span>
+     <span class="kn">import</span> <span class="nn">sphinx</span>
+     <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--check&#39;</span><span class="p">]:</span>
+         <span class="n">extraopts</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;-W&#39;</span><span class="p">]</span>
+     <span class="k">else</span><span class="p">:</span>
+         <span class="n">extraopts</span> <span class="o">=</span> <span class="p">[]</span>
+     <span class="k">if</span> <span class="ow">not</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--cache&#39;</span><span class="p">]</span> <span class="ow">and</span> <span class="n">files</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+         <span class="n">extraopts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;-E&#39;</span><span class="p">)</span>
+     <span class="n">docpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">throot</span><span class="p">,</span> <span class="s1">&#39;doc&#39;</span><span class="p">)</span>
+     <span class="n">inopt</span> <span class="o">=</span> <span class="p">[</span><span class="n">docpath</span><span class="p">,</span> <span class="n">workdir</span><span class="p">]</span>
+     <span class="k">if</span> <span class="n">files</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+         <span class="n">inopt</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">files</span><span class="p">)</span>
+     <span class="n">ret</span> <span class="o">=</span> <span class="n">sphinx</span><span class="o">.</span><span class="n">build_main</span><span class="p">([</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;-b&#39;</span><span class="p">,</span> <span class="n">builder</span><span class="p">]</span> <span class="o">+</span> <span class="n">extraopts</span> <span class="o">+</span> <span class="n">inopt</span><span class="p">)</span>
+     <span class="k">if</span> <span class="n">ret</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span>
+
+ <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--all&#39;</span><span class="p">]</span> <span class="ow">or</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--rst&#39;</span><span class="p">]:</span>
+     <span class="n">mkdir</span><span class="p">(</span><span class="s2">&quot;doc&quot;</span><span class="p">)</span>
+     <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">throot</span><span class="p">,</span> <span class="s1">&#39;doc&#39;</span><span class="p">)]</span>
+     <span class="n">call_sphinx</span><span class="p">(</span><span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+
+     <span class="k">if</span> <span class="ow">not</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--nopdf&#39;</span><span class="p">]:</span>
+         <span class="c1"># Generate latex file in a temp directory</span>
+         <span class="kn">import</span> <span class="nn">tempfile</span>
+         <span class="c1">#workdir = tempfile.mkdtemp()</span>
+         <span class="n">workdir</span> <span class="o">=</span> <span class="n">latexdir</span>
+         <span class="n">call_sphinx</span><span class="p">(</span><span class="s1">&#39;latex&#39;</span><span class="p">,</span> <span class="n">workdir</span><span class="p">)</span>
+         <span class="c1"># Compile to PDF</span>
+         <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">workdir</span><span class="p">)</span>
+         <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;make&#39;</span><span class="p">)</span>
+         <span class="k">try</span><span class="p">:</span>
+             <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">workdir</span><span class="p">,</span> <span class="s1">&#39;sphinxgithub.pdf&#39;</span><span class="p">),</span> <span class="n">outdir</span><span class="p">)</span>
+             <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">outdir</span><span class="p">)</span>
+             <span class="c1"># remove the workdir folder</span>
+             <span class="c1">#shutil.rmtree(workdir)</span>
+         <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+             <span class="k">print</span><span class="p">(</span><span class="s1">&#39;OSError:&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+         <span class="k">except</span> <span class="ne">IOError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+             <span class="k">print</span><span class="p">(</span><span class="s1">&#39;IOError:&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+ <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--test&#39;</span><span class="p">]:</span>
+     <span class="n">mkdir</span><span class="p">(</span><span class="s2">&quot;doc&quot;</span><span class="p">)</span>
+     <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">throot</span><span class="p">,</span> <span class="s1">&#39;doc&#39;</span><span class="p">)]</span>
+     <span class="n">call_sphinx</span><span class="p">(</span><span class="s1">&#39;doctest&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+
+ <span class="c1"># To go back to the original current directory.</span>
+ <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">currentdir</span><span class="p">)</span>
+
+ <span class="c1"># Reset THEANO_FLAGS</span>
+ <span class="c1"># os.environ[&#39;THEANO_FLAGS&#39;] = env_th_flags</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="makefile-wrapper">
+<h3>4.4.4. <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> Wrapper<a class="headerlink" href="#makefile-wrapper" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">all</span><span class="p">:</span>
+        <span class="n">python</span> <span class="n">scripts</span><span class="o">/</span><span class="n">docgen</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="full-docgen-py-script">
+<h2>4.5. Full <code class="docutils literal notranslate"><span class="pre">docgen.py</span></code> Script<a class="headerlink" href="#full-docgen-py-script" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#############################################################################</span>
+<span class="c1"># I heavily borrowed, modified and used the configuration in docgen.py of Theano</span>
+<span class="c1"># package project. I will keep all the comments from Theano team and the </span>
+<span class="c1"># coryright of this file belongs to Theano team. </span>
+<span class="c1"># reference: </span>
+<span class="c1">#           </span>
+<span class="c1"># Theano repository: https://github.com/Theano/Theano</span>
+<span class="c1"># docgen.py: https://github.com/Theano/Theano/blob/master/doc/scripts/docgen.py</span>
+<span class="c1">##############################################################################</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+<span class="kn">import</span> <span class="nn">inspect</span>
+<span class="kn">import</span> <span class="nn">getopt</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="n">throot</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">))</span>
+
+    <span class="n">options</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">bool</span><span class="p">)</span>
+    <span class="n">opts</span><span class="p">,</span> <span class="n">args</span> <span class="o">=</span> <span class="n">getopt</span><span class="o">.</span><span class="n">getopt</span><span class="p">(</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span>
+        <span class="s1">&#39;o:f:&#39;</span><span class="p">,</span>
+        <span class="p">[</span><span class="s1">&#39;rst&#39;</span><span class="p">,</span> <span class="s1">&#39;help&#39;</span><span class="p">,</span> <span class="s1">&#39;nopdf&#39;</span><span class="p">,</span> <span class="s1">&#39;cache&#39;</span><span class="p">,</span> <span class="s1">&#39;check&#39;</span><span class="p">,</span> <span class="s1">&#39;test&#39;</span><span class="p">])</span>
+    <span class="n">options</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="nb">dict</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">or</span> <span class="bp">True</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">opts</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--help&#39;</span><span class="p">]:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Usage: </span><span class="si">%s</span><span class="s1"> [OPTIONS] [files...]&#39;</span> <span class="o">%</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  -o &lt;dir&gt;: output the html files in the specified dir&#39;</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  --cache: use the doctree cache&#39;</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  --rst: only compile the doc (requires sphinx)&#39;</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  --nopdf: do not produce a PDF file from the doc, only HTML&#39;</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  --test: run all the code samples in the documentaton&#39;</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  --check: treat warnings as errors&#39;</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;  --help: this help&#39;</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;If one or more files are specified after the options then only &#39;</span>
+              <span class="s1">&#39;those files will be built. Otherwise the whole tree is &#39;</span>
+              <span class="s1">&#39;processed. Specifying files will implies --cache.&#39;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span><span class="p">(</span><span class="n">options</span><span class="p">[</span><span class="s1">&#39;--rst&#39;</span><span class="p">]</span> <span class="ow">or</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--test&#39;</span><span class="p">]):</span>
+        <span class="c1"># Default is now rst</span>
+        <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--rst&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+
+    <span class="k">def</span> <span class="nf">mkdir</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
+            <span class="k">pass</span>
+
+    <span class="c1"># create the putput folder docs, since github page will use /docs folder for Github page.</span>
+    <span class="n">outdir</span> <span class="o">=</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;-o&#39;</span><span class="p">]</span> <span class="ow">or</span> <span class="p">(</span><span class="n">throot</span> <span class="o">+</span> <span class="s1">&#39;/docs&#39;</span><span class="p">)</span>
+    <span class="c1"># create the output folder latex</span>
+    <span class="n">latexdir</span> <span class="o">=</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;-o&#39;</span><span class="p">]</span> <span class="ow">or</span> <span class="p">(</span><span class="n">throot</span> <span class="o">+</span> <span class="s1">&#39;/latex&#39;</span><span class="p">)</span>
+
+    <span class="n">files</span> <span class="o">=</span> <span class="bp">None</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">args</span><span class="p">]</span>
+    <span class="n">currentdir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+    <span class="n">mkdir</span><span class="p">(</span><span class="n">outdir</span><span class="p">)</span>
+    <span class="c1">#mkdir(latexdir)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">outdir</span><span class="p">)</span>
+
+    <span class="c1"># add .gitignore file to your github repository</span>
+    <span class="n">ignore_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">throot</span><span class="p">,</span> <span class="s1">&#39;.gitignore&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ignore_path</span><span class="p">):</span>
+        <span class="n">ignore_txt</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">throot</span> <span class="o">+</span> <span class="s1">&#39;/doc/scripts/&#39;</span><span class="o">+</span><span class="s1">&#39;gitignore.txt&#39;</span><span class="p">)</span>  
+        <span class="n">gitignore</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">ignore_path</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ignore_txt</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+            <span class="n">gitignore</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">ignore_txt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">gitignore</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="c1"># add .nojekyll file to fix the github pages issues</span>
+    <span class="n">nojekyll_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">outdir</span><span class="p">,</span> <span class="s1">&#39;.nojekyll&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">nojekyll_path</span><span class="p">):</span>
+        <span class="n">nojekyll</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">nojekyll_path</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+        <span class="n">nojekyll</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="c1"># Make sure the appropriate &#39;theano&#39; directory is in the PYTHONPATH</span>
+    <span class="n">pythonpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;PYTHONPATH&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">pythonpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">pathsep</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">throot</span><span class="p">,</span> <span class="n">pythonpath</span><span class="p">])</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">throot</span><span class="p">]</span>  <span class="c1"># We must not use os.environ.</span>
+
+    <span class="c1"># Make sure we don&#39;t use gpu to compile documentation</span>
+    <span class="n">env_th_flags</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;THEANO_FLAGS&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;THEANO_FLAGS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;device=cpu,force_device=True&#39;</span>
+    
+   
+
+    <span class="k">def</span> <span class="nf">call_sphinx</span><span class="p">(</span><span class="n">builder</span><span class="p">,</span> <span class="n">workdir</span><span class="p">):</span>
+        <span class="kn">import</span> <span class="nn">sphinx</span>
+        <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--check&#39;</span><span class="p">]:</span>
+            <span class="n">extraopts</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;-W&#39;</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">extraopts</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--cache&#39;</span><span class="p">]</span> <span class="ow">and</span> <span class="n">files</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">extraopts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;-E&#39;</span><span class="p">)</span>
+        <span class="n">docpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">throot</span><span class="p">,</span> <span class="s1">&#39;doc&#39;</span><span class="p">)</span>
+        <span class="n">inopt</span> <span class="o">=</span> <span class="p">[</span><span class="n">docpath</span><span class="p">,</span> <span class="n">workdir</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">files</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">inopt</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">files</span><span class="p">)</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="n">sphinx</span><span class="o">.</span><span class="n">build_main</span><span class="p">([</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;-b&#39;</span><span class="p">,</span> <span class="n">builder</span><span class="p">]</span> <span class="o">+</span> <span class="n">extraopts</span> <span class="o">+</span> <span class="n">inopt</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ret</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--all&#39;</span><span class="p">]</span> <span class="ow">or</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--rst&#39;</span><span class="p">]:</span>
+        <span class="n">mkdir</span><span class="p">(</span><span class="s2">&quot;doc&quot;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">throot</span><span class="p">,</span> <span class="s1">&#39;doc&#39;</span><span class="p">)]</span>
+        <span class="n">call_sphinx</span><span class="p">(</span><span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--nopdf&#39;</span><span class="p">]:</span>
+            <span class="c1"># Generate latex file in a temp directory</span>
+            <span class="kn">import</span> <span class="nn">tempfile</span>
+            <span class="n">workdir</span> <span class="o">=</span> <span class="n">tempfile</span><span class="o">.</span><span class="n">mkdtemp</span><span class="p">()</span>
+            <span class="c1">#workdir = latexdir</span>
+            <span class="n">call_sphinx</span><span class="p">(</span><span class="s1">&#39;latex&#39;</span><span class="p">,</span> <span class="n">workdir</span><span class="p">)</span>
+            <span class="c1"># Compile to PDF</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">workdir</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;make&#39;</span><span class="p">)</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">workdir</span><span class="p">,</span> <span class="s1">&#39;statspy.pdf&#39;</span><span class="p">),</span> <span class="n">outdir</span><span class="p">)</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">outdir</span><span class="p">)</span>
+                <span class="c1"># remove the workdir folder</span>
+                <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">workdir</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s1">&#39;OSError:&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">IOError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s1">&#39;IOError:&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--test&#39;</span><span class="p">]:</span>
+        <span class="n">mkdir</span><span class="p">(</span><span class="s2">&quot;doc&quot;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">throot</span><span class="p">,</span> <span class="s1">&#39;doc&#39;</span><span class="p">)]</span>
+        <span class="n">call_sphinx</span><span class="p">(</span><span class="s1">&#39;doctest&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+
+    <span class="c1"># To go back to the original current directory.</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">currentdir</span><span class="p">)</span>
+
+    <span class="c1"># Reset THEANO_FLAGS</span>
+    <span class="c1">#os.environ[&#39;THEANO_FLAGS&#39;] = env_th_flags</span>
+
+
+
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="rtxt.html" class="btn btn-neutral float-right" title="5. reStructuredText Markup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pkgs.html" class="btn btn-neutral float-left" title="3. Packages Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Wenqiang Feng
+      <span class="lastupdated">
+        Last updated on Mar 17, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

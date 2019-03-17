@@ -1,0 +1,1581 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. reStructuredText Markup &mdash; Statistics Python Library API 1.00 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/icon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fix_rtd.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="6. Publishing on Github" href="github.html" />
+    <link rel="prev" title="4. Sphinx Configuration" href="sphinx.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Statistics Python Library API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.00
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pkgs.html">3. Packages Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sphinx.html">4. Sphinx Configuration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. reStructuredText Markup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#restructuredtext-primer">5.1. reStructuredText Primer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sections">5.1.1. Sections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#paragraphs">5.1.2. Paragraphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#table">5.1.3. Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#images-and-figures">5.1.4. Images and Figures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#math">5.1.5. Math</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-codes">5.1.6. Source Codes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reference">5.1.7. Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#roles">5.2. Roles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#standard-roles">5.2.1. Standard Roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#specialized-roles">5.2.2. Specialized Roles</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#directives">5.3. Directives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#admonitions">5.3.1. Admonitions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="github.html">6. Publishing on Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">7. Main Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appx.html">8. Appendix: My LaTex Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Statistics Python Library API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>5. reStructuredText Markup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/runawayhorse001/statspy/blob/master/doc/rtxt.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="restructuredtext-markup">
+<span id="rtext"></span><h1>5. reStructuredText Markup<a class="headerlink" href="#restructuredtext-markup" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-chinese-proverb admonition">
+<p class="first admonition-title">Chinese proverb</p>
+<p class="last">Making full preparation will not delay your job but quicken the process. – old Chinese proverb</p>
+</div>
+<div class="section" id="restructuredtext-primer">
+<h2>5.1. reStructuredText Primer<a class="headerlink" href="#restructuredtext-primer" title="Permalink to this headline">¶</a></h2>
+<p>I would refer the reader to <a class="reference internal" href="reference.html#sphinx2019" id="id1">[Sphinx2019]</a> and <a class="reference internal" href="reference.html#georg2018" id="id2">[Georg2018]</a> for more details.</p>
+<div class="section" id="sections">
+<h3>5.1.1. Sections<a class="headerlink" href="#sections" title="Permalink to this headline">¶</a></h3>
+<p>Sections are identified through their titles, which are marked up with adornment: “underlines” below the title text, or underlines and matching “overlines” above the title. More details can be found at: <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections">http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections</a></p>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">===============</span>
+<span class="gh"> Section Title</span>
+<span class="gh">===============</span>
+
+<span class="gh">Subsection Title</span>
+<span class="gh">++++++++++++++++</span>
+
+<span class="gh">Subsubection Title</span>
+<span class="gh">------------------</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="paragraphs">
+<h3>5.1.2. Paragraphs<a class="headerlink" href="#paragraphs" title="Permalink to this headline">¶</a></h3>
+<p>The paragraph is the most basic block in a reST document.
+Paragraphs are simply chunks of text separated by one or
+more blank lines. As in Python, indentation is significant
+in reST, so all lines of the same paragraph must be
+left-aligned to the <strong>same level of indentation</strong>. More
+details can be found at: <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#paragraphs">http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#paragraphs</a></p>
+<ol class="arabic simple">
+<li><strong>General Paragraphs</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>This is the first demo paragraph. The blank line above
+the first line is required; The blank line below the last
+line is required.
+
+This is the second demo paragraph. The blank line above
+the first line is required; The blank line below the last
+line is required.
+</pre></div>
+</div>
+<p>Syntax diagram:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+------------------------------+
+<span class="o">|</span> paragraph                    |
+<span class="o">|</span>                              |
++------------------------------+
+
++------------------------------+
+<span class="o">|</span> paragraph                    |
+<span class="o">|</span>                              |
++------------------------------+
+</pre></div>
+</div>
+<p>Result:</p>
+<p>This is the first demo paragraph. The blank line above the first
+line is required; The blank line below the last line is required.</p>
+<p>This is the second demo paragraph. The blank line above the first
+line is required; The blank line below the last line is required.</p>
+<ol class="arabic simple" start="2">
+<li><strong>Bullet Lists Paragraphs</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">-</span> This is the first bullet list item.  The blank line above the
+  first list item is required; blank lines between list items
+  (such as below this paragraph) are optional.
+
+<span class="m">-</span> This is the first paragraph in the second item in the list.
+
+  This is the second paragraph in the second item in the list.
+  The blank line above this paragraph is required.  The left edge
+  of this paragraph lines up with the paragraph above, both
+  indented relative to the bullet.
+
+  <span class="m">-</span> This is a sublist.  The bullet lines up with the left edge of
+    the text blocks above.  A sublist is a new list so requires a
+    blank line above and below.
+
+  <span class="m">-</span> This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.
+
+<span class="m">-</span> This is the third item of the main list.
+
+This paragraph is not part of the list.
+</pre></div>
+</div>
+<p>Syntax diagram:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+------+-----------------------+
+<span class="o">|</span> &quot;- &quot; | list item             |
++------| (body elements)+      |
+       +-----------------------+
+</pre></div>
+</div>
+<p>Result:</p>
+<ul>
+<li><p class="first">This is the first bullet list item.  The blank line above the
+first list item is required; blank lines between list items
+(such as below this paragraph) are optional.</p>
+</li>
+<li><p class="first">This is the first paragraph in the second item in the list.</p>
+<p>This is the second paragraph in the second item in the list.
+The blank line above this paragraph is required.  The left edge
+of this paragraph lines up with the paragraph above, both
+indented relative to the bullet.</p>
+<ul class="simple">
+<li>This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.</li>
+<li>This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.</li>
+</ul>
+</li>
+<li><p class="first">This is the third item of the main list.</p>
+</li>
+</ul>
+<p>This paragraph is not part of the list.</p>
+<ol class="arabic simple" start="3">
+<li><strong>Bullet Lists Paragraphs</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">1.</span> This is the first bullet list item.  The blank line above the
+   first list item is required; blank lines between list items
+   (such as below this paragraph) are optional.
+
+<span class="m">2.</span> This is the first paragraph in the second item in the list.
+
+   This is the second paragraph in the second item in the list.
+   The blank line above this paragraph is required.  The left edge
+   of this paragraph lines up with the paragraph above, both
+   indented relative to the bullet.
+
+   a. This is a sublist.  The bullet lines up with the left edge of
+      the text blocks above.  A sublist is a new list so requires a
+      blank line above and below.
+
+   b. This is a sublist.  The bullet lines up with the left edge of
+      the text blocks above.  A sublist is a new list so requires a
+      blank line above and below.
+
+
+<span class="m">3.</span> This is the third item of the main list.
+</pre></div>
+</div>
+<p>Result:</p>
+<ol class="arabic">
+<li><p class="first">This is the first bullet list item.  The blank line above the
+first list item is required; blank lines between list items
+(such as below this paragraph) are optional.</p>
+</li>
+<li><p class="first">This is the first paragraph in the second item in the list.</p>
+<p>This is the second paragraph in the second item in the list.
+The blank line above this paragraph is required.  The left edge
+of this paragraph lines up with the paragraph above, both
+indented relative to the bullet.</p>
+<ol class="loweralpha simple">
+<li><dl class="first docutils">
+<dt>This is a sublist.  The bullet lines up with the left edge of</dt>
+<dd>the text blocks above.  A sublist is a new list so requires a
+blank line above and below.</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>This is a sublist.  The bullet lines up with the left edge of</dt>
+<dd>the text blocks above.  A sublist is a new list so requires a
+blank line above and below.</dd>
+</dl>
+</li>
+</ol>
+</li>
+<li><p class="first">This is the third item of the main list.</p>
+</li>
+</ol>
+<p>Syntax diagram:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+-------+----------------------+
+<span class="o">|</span> &quot;1. &quot; | list item            |
++-------| (body elements)+     |
+        +----------------------+
+</pre></div>
+</div>
+<p>Result:</p>
+<ol class="arabic">
+<li><p class="first">This is the first bullet list item.  The blank line above the
+first list item is required; blank lines between list items
+(such as below this paragraph) are optional.</p>
+</li>
+<li><p class="first">This is the first paragraph in the second item in the list.</p>
+<p>This is the second paragraph in the second item in the list.
+The blank line above this paragraph is required.  The left edge
+of this paragraph lines up with the paragraph above, both
+indented relative to the bullet.</p>
+<ol class="loweralpha simple">
+<li>This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.</li>
+<li>This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.</li>
+</ol>
+</li>
+<li><p class="first">This is the third item of the main list.</p>
+</li>
+<li><p class="first"><strong>Blocked Paragraphs</strong></p>
+</li>
+</ol>
+<ol class="loweralpha simple">
+<li><strong>Line Blocks</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Take it away, Eric the Orchestra Leader!
+
+    <span class="o">|</span> A one, two, a one two three four
+    |
+    <span class="o">|</span> Half a bee, philosophically,
+    <span class="o">|</span>     must, <span class="ge">*ipso facto*</span>, half not be.
+    <span class="o">|</span> But half the bee has got to be,
+    <span class="o">|</span>     <span class="ge">*vis a vis*</span> its entity.  D&#39;you see?
+    |
+    <span class="o">|</span> But can a bee be said to be
+    <span class="o">|</span>     or not to be an entire bee,
+    <span class="o">|</span>         when half the bee is not a bee,
+    <span class="o">|</span>             due to some ancient injury?
+    |
+    <span class="o">|</span> Singing...
+</pre></div>
+</div>
+<p>Syntax diagram:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+------+-----------------------+
+<span class="o">|</span> &quot;| &quot; | line                  |
++------| continuation line     |
+       +-----------------------+
+</pre></div>
+</div>
+<p>Result:</p>
+<p>Take it away, Eric the Orchestra Leader!</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">A one, two, a one two three four</div>
+<div class="line"><br /></div>
+<div class="line">Half a bee, philosophically,</div>
+<div class="line-block">
+<div class="line">must, <em>ipso facto</em>, half not be.</div>
+</div>
+<div class="line">But half the bee has got to be,</div>
+<div class="line-block">
+<div class="line"><em>vis a vis</em> its entity.  D’you see?</div>
+<div class="line"><br /></div>
+</div>
+<div class="line">But can a bee be said to be</div>
+<div class="line-block">
+<div class="line">or not to be an entire bee,</div>
+<div class="line-block">
+<div class="line">when half the bee is not a bee,</div>
+<div class="line-block">
+<div class="line">due to some ancient injury?</div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="line">Singing…</div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><strong>Doctest Blocks</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>This is an ordinary paragraph.
+
+&gt;&gt;&gt; print &#39;this is a Doctest block&#39;
+this is a Doctest block
+
+The following is a literal block<span class="se">::</span>
+
+<span class="s">    &gt;&gt;&gt; This is not recognized as a doctest block by</span>
+<span class="s">    reStructuredText.  It *will* be recognized by the doctest</span>
+<span class="s">    module, though!</span>
+</pre></div>
+</div>
+<p>Result:</p>
+<p>This is an ordinary paragraph.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">&#39;this is a Doctest block&#39;</span>
+<span class="go">this is a Doctest block</span>
+</pre></div>
+</div>
+<p>The following is a literal block:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">This</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">recognized</span> <span class="k">as</span> <span class="n">a</span> <span class="n">doctest</span> <span class="n">block</span> <span class="n">by</span>
+<span class="go">reStructuredText.  It *will* be recognized by the doctest</span>
+<span class="go">module, though!</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><strong>Field Lists</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:Date:</span> <span class="nf">2001-08-16</span>
+<span class="nc">:Version:</span> <span class="nf">1</span>
+<span class="nc">:Authors:</span> <span class="nf">- Me</span>
+          <span class="m">-</span> Myself
+          <span class="m">-</span> I
+<span class="nc">:Indentation:</span> <span class="nf">Since the field marker may be quite long, the second</span>
+   and subsequent lines of the field body do not have to line up
+   with the first line, but they must be indented relative to the
+   field name marker, and they must line up with each other.
+<span class="nc">:Parameter i:</span> <span class="nf">integer</span>
+</pre></div>
+</div>
+<p>Result:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Date:</th><td class="field-body"><p class="first">2001-08-16</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Version:</th><td class="field-body"><p class="first">1</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body"><ul class="first simple">
+<li>Me</li>
+<li>Myself</li>
+<li>I</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Indentation:</th><td class="field-body"><p class="first">Since the field marker may be quite long, the second
+and subsequent lines of the field body do not have to line up
+with the first line, but they must be indented relative to the
+field name marker, and they must line up with each other.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameter i:</th><td class="field-body"><p class="first last">integer</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="table">
+<h3>5.1.3. Table<a class="headerlink" href="#table" title="Permalink to this headline">¶</a></h3>
+<p>More details can be found at: <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#grid-tables">http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#grid-tables</a></p>
+<ol class="arabic simple">
+<li><strong>Grid Tables</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+------------------------+------------+----------+----------+
+<span class="o">|</span> Header row, column 1   | Header 2   | Header 3 | Header 4 |
+<span class="o">|</span> (header rows optional) |            |          |          |
++========================+============+==========+==========+
+<span class="o">|</span> body row 1, column 1   | column 2   | column 3 | column 4 |
++------------------------+------------+----------+----------+
+<span class="o">|</span> body row 2             | Cells may span columns.          |
++------------------------+------------+---------------------+
+<span class="o">|</span> body row 3             | Cells may  | - Table cells       |
++------------------------+ span rows. | - contain           |
+<span class="o">|</span> body row 4             |            | - body elements.    |
++------------------------+------------+---------------------+
+</pre></div>
+</div>
+<p>Result:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="21%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header row, column 1
+(header rows optional)</th>
+<th class="head">Header 2</th>
+<th class="head">Header 3</th>
+<th class="head">Header 4</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body row 1, column 1</td>
+<td>column 2</td>
+<td>column 3</td>
+<td>column 4</td>
+</tr>
+<tr class="row-odd"><td>body row 2</td>
+<td colspan="3">Cells may span columns.</td>
+</tr>
+<tr class="row-even"><td>body row 3</td>
+<td rowspan="2">Cells may
+span rows.</td>
+<td colspan="2" rowspan="2"><ul class="first last simple">
+<li>Table cells</li>
+<li>contain</li>
+<li>body elements.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>body row 4</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="2">
+<li><strong>Simple Tables</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>=====  =====  =======
+  A      B    A and B
+=====  =====  =======
+False  False  False
+True   False  False
+False  True   False
+True   True   True
+=====  =====  =======
+</pre></div>
+</div>
+<p>Result:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="29%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A and B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>=====  =====
+col 1  col 2
+=====  =====
+1      Second column of row 1.
+2      Second column of row 2.
+       Second line of paragraph.
+3      - Second column of row 3.
+
+       <span class="m">-</span> Second item in bullet
+         list (row 3, column 2).
+\      Row 4; column 1 will be empty.
+=====  =====
+</pre></div>
+</div>
+<p>Result:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="86%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">col 1</th>
+<th class="head">col 2</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Second column of row 1.</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Second column of row 2.
+Second line of paragraph.</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td><ul class="first last simple">
+<li>Second column of row 3.</li>
+<li>Second item in bullet
+list (row 3, column 2).</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td>Row 4; column 1 will be empty.</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="3">
+<li><strong>CSV Tables</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">csv-table</span><span class="p">::</span> Frozen Delights!
+   <span class="nc">:header:</span> <span class="nf">&quot;Treat&quot;, &quot;Quantity&quot;, &quot;Description&quot;</span>
+   <span class="nc">:widths:</span> <span class="nf">15, 10, 30</span>
+
+   &quot;Albatross&quot;, 2.99, &quot;On a stick!&quot;
+   &quot;Crunchy Frog&quot;, 1.49, &quot;If we took the bones out, it wouldn&#39;t be
+   crunchy, now would it?&quot;
+   &quot;Gannet Ripple&quot;, 1.99, &quot;On a stick!&quot;
+</pre></div>
+</div>
+<table border="1" class="colwidths-given docutils" id="id8">
+<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="27%" />
+<col width="18%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Treat</th>
+<th class="head">Quantity</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Albatross</td>
+<td>2.99</td>
+<td>On a stick!</td>
+</tr>
+<tr class="row-odd"><td>Crunchy Frog</td>
+<td>1.49</td>
+<td>If we took the bones out, it wouldn’t be
+crunchy, now would it?</td>
+</tr>
+<tr class="row-even"><td>Gannet Ripple</td>
+<td>1.99</td>
+<td>On a stick!</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="4">
+<li><strong>List Tables</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">list-table</span><span class="p">::</span> Frozen Delights!
+   <span class="nc">:widths:</span> <span class="nf">15 10 30</span>
+   <span class="nc">:header-rows:</span> <span class="nf">1</span>
+
+   <span class="m">*</span> - Treat
+     <span class="m">-</span> Quantity
+     <span class="m">-</span> Description
+   <span class="m">*</span> - Albatross
+     <span class="m">-</span> 2.99
+     <span class="m">-</span> On a stick!
+   <span class="m">*</span> - Crunchy Frog
+     <span class="m">-</span> 1.49
+     <span class="m">-</span> If we took the bones out, it wouldn&#39;t be
+       crunchy, now would it?
+   <span class="m">*</span> - Gannet Ripple
+     <span class="m">-</span> 1.99
+     <span class="m">-</span> On a stick!
+</pre></div>
+</div>
+<table border="1" class="colwidths-given docutils" id="id9">
+<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="27%" />
+<col width="18%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Treat</th>
+<th class="head">Quantity</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Albatross</td>
+<td>2.99</td>
+<td>On a stick!</td>
+</tr>
+<tr class="row-odd"><td>Crunchy Frog</td>
+<td>1.49</td>
+<td>If we took the bones out, it wouldn’t be
+crunchy, now would it?</td>
+</tr>
+<tr class="row-even"><td>Gannet Ripple</td>
+<td>1.99</td>
+<td>On a stick!</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="images-and-figures">
+<h3>5.1.4. Images and Figures<a class="headerlink" href="#images-and-figures" title="Permalink to this headline">¶</a></h3>
+<p>There are two image directives: <code class="docutils literal notranslate"><span class="pre">imag</span></code> and <code class="docutils literal notranslate"><span class="pre">figure</span></code>. More details can be found at: <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#image">http://docutils.sourceforge.net/docs/ref/rst/directives.html#image</a>.</p>
+<ol class="arabic simple">
+<li><strong>Simple import</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> images/boxp.png
+</pre></div>
+</div>
+<img alt="_images/boxp.png" src="_images/boxp.png" />
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> images/avg_rating_mon.png
+   <span class="nc">:scale:</span> <span class="nf">50 %</span>
+   <span class="nc">:alt:</span> <span class="nf">map to buried treasure</span>
+
+   This is the caption of the figure (a simple paragraph).
+</pre></div>
+</div>
+<div class="figure" id="id10">
+<a class="reference internal image-reference" href="_images/avg_rating_mon.png"><img alt="map to buried treasure" src="_images/avg_rating_mon.png" style="width: 641.5px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">This is the caption of the figure (a simple paragraph).</span></p>
+</div>
+<ol class="arabic simple" start="2">
+<li><strong>Complex import</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> images/boxp.png
+   <span class="nc">:height:</span> <span class="nf">400 px</span>
+   <span class="nc">:width:</span> <span class="nf">800 px</span>
+   <span class="nc">:scale:</span> <span class="nf">50 %</span>
+   <span class="nc">:alt:</span> <span class="nf">alternate text</span>
+   <span class="nc">:align:</span> <span class="nf">right</span>
+
+   This is the caption of the figure (a simple paragraph).
+
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+
+<span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> images/boxp.png
+   <span class="nc">:height:</span> <span class="nf">400 px</span>
+   <span class="nc">:width:</span> <span class="nf">800 px</span>
+   <span class="nc">:scale:</span> <span class="nf">50 %</span>
+   <span class="nc">:alt:</span> <span class="nf">alternate text</span>
+   <span class="nc">:align:</span> <span class="nf">center</span>
+
+   This is the caption of the figure (a simple paragraph).
+
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+
+
+<span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> images/boxp.png
+   <span class="nc">:height:</span> <span class="nf">400 px</span>
+   <span class="nc">:width:</span> <span class="nf">800 px</span>
+   <span class="nc">:scale:</span> <span class="nf">50 %</span>
+   <span class="nc">:alt:</span> <span class="nf">alternate text</span>
+   <span class="nc">:align:</span> <span class="nf">left</span>
+
+   This is the caption of the figure (a simple paragraph).
+
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="figure align-right" id="id11">
+<a class="reference internal image-reference" href="_images/boxp.png"><img alt="alternate text" src="_images/boxp.png" style="width: 400.0px; height: 200.0px;" /></a>
+<p class="caption"><span class="caption-text">This is the caption of the figure (a simple paragraph).</span></p>
+</div>
+<p>Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures</p>
+<div class="figure align-center" id="id12">
+<a class="reference internal image-reference" href="_images/boxp.png"><img alt="alternate text" src="_images/boxp.png" style="width: 400.0px; height: 200.0px;" /></a>
+<p class="caption"><span class="caption-text">This is the caption of the figure (a simple paragraph).</span></p>
+</div>
+<p>Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures</p>
+<div class="figure align-left" id="id13">
+<a class="reference internal image-reference" href="_images/boxp.png"><img alt="alternate text" src="_images/boxp.png" style="width: 400.0px; height: 200.0px;" /></a>
+<p class="caption"><span class="caption-text">This is the caption of the figure (a simple paragraph).</span></p>
+</div>
+<p>Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures</p>
+<ol class="arabic simple" start="3">
+<li><strong>Figures in table</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+------------------------------+-----------------------+
+<span class="o">|</span> Figures                      | Description           |
++==============================+=======================+
+<span class="o">|</span> .. figure:: images/corr.png  | Figure 1: test        |
+<span class="o">|</span>    :scale: 20 %              |                       |
++------------------------------+-----------------------+
+<span class="o">|</span> .. image:: images/corr.png   | Figure 2: test        |
+<span class="o">|</span>    :scale: 20 %              |                       |
++------------------------------+-----------------------+
+<span class="o">|</span> .. image:: images/corr.png   | Figure 3: test        |
+<span class="o">|</span>    :scale: 20 %              |                       |
++------------------------------+-----------------------+
+</pre></div>
+</div>
+<p>Result:</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="57%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Figures</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><div class="first last figure">
+<a class="reference internal image-reference" href="_images/corr.png"><img alt="_images/corr.png" src="_images/corr.png" style="width: 180.0px; height: 160.0px;" /></a>
+</div>
+</td>
+<td>Figure 1: test</td>
+</tr>
+<tr class="row-odd"><td><a class="first last reference internal image-reference" href="_images/corr.png"><img alt="_images/corr.png" src="_images/corr.png" style="width: 180.0px; height: 160.0px;" /></a>
+</td>
+<td>Figure 2: test</td>
+</tr>
+<tr class="row-even"><td><a class="first last reference internal image-reference" href="_images/corr.png"><img alt="_images/corr.png" src="_images/corr.png" style="width: 180.0px; height: 160.0px;" /></a>
+</td>
+<td>Figure 3: test</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="math">
+<h3>5.1.5. Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h3>
+<p>The math role marks its content as mathematical notation (inline formula). More details can be found at: <a class="reference external" href="http://www.sphinx-doc.org/es/stable/ext/math.html">http://www.sphinx-doc.org/es/stable/ext/math.html</a>.</p>
+<p>The input language for mathematics is LaTeX markup. I will not do a LaTex tutorial as here.</p>
+<ol class="arabic simple">
+<li><strong>Inline formula</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>The area of a circle is <span class="na">:math:</span><span class="nv">`A_\text{c} = (\pi/4) d^2`</span>.
+</pre></div>
+</div>
+<p>RFesult:</p>
+<p>The area of a circle is <img class="math" src="_images/math/e1d1ac0f777b8d88929a167e41ebb61458217887.png" alt="A_\text{c} = (\pi/4) d^2"/>.</p>
+<ol class="arabic simple" start="2">
+<li><strong>Equations</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">    ..</span> <span class="ow">math</span><span class="p">::</span>
+       <span class="nc">:label:</span> <span class="nf">eq_lin_cost_func</span>
+
+       \min _{\beta\in \mathbb {R} ^{p}}{\frac {1}{n}}\|{\hat {X}}\beta-{\hat {Y}}\|^{2}
+
+The equation <span class="na">:eq:</span><span class="nv">`eq_lin_cost_func`</span> is the cost function for linear regression.
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="math" id="equation-eq-cost-function">
+<p><span class="eqno">(1)<a class="headerlink" href="#equation-eq-cost-function" title="Permalink to this equation">¶</a></span><img src="_images/math/bc3e8b6885ee92701e798616cb38f329957b8017.png" alt="\min _{\beta\in \mathbb {R} ^{p}}{\frac {1}{n}}\|{\hat {X}}\beta-{\hat {Y}}\|^{2}"/></p>
+</div><p>The equation <a class="reference internal" href="#equation-eq-cost-function">(1)</a> is the cost function for linear regression.</p>
+<ol class="arabic simple" start="3">
+<li><strong>User defined symbol and equation</strong></li>
+</ol>
+<p>Add your definitions to the <code class="docutils literal notranslate"><span class="pre">latex_elements['preamble']</span></code> and <code class="docutils literal notranslate"><span class="pre">imgmath_latex_preamble</span></code>, then you can apply your own notations for symbol and equtions.</p>
+<p>my definitions for <img class="math" src="_images/math/45e81e0b143d73157c1ef1aed08e5b5fde77e898.png" alt="\B"/> symbol and <img class="math" src="_images/math/a09fe1fe44a5ff232f4a664eae66bd8370fe4815.png" alt="\euler"/> equation:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span>&#39;<span class="k">\\</span>def<span class="k">\\</span>B<span class="nb">{{</span><span class="k">\\</span>bf <span class="k">\\</span>mathcal B<span class="nb">}}</span><span class="k">\n</span>&#39;+ <span class="k">\</span>
+&#39;<span class="k">\\</span>def<span class="k">\\</span>euler<span class="nb">{</span><span class="k">\ </span>e<span class="nb">^{</span>i<span class="k">\pi</span><span class="nb">}</span> + 1 = 0<span class="nb">}</span><span class="k">\n</span>&#39;
+</pre></div>
+</div>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>The is a test for the user defined math symbol: <span class="na">:math:</span><span class="nv">`\B`</span>.
+
+The is a test for the user defined math equation:
+
+<span class="p">..</span> <span class="ow">math</span><span class="p">::</span>
+
+        \euler
+</pre></div>
+</div>
+<p>The is a test for the user defined math symbol: <img class="math" src="_images/math/45e81e0b143d73157c1ef1aed08e5b5fde77e898.png" alt="\B"/>.</p>
+<p>The is a test for the user defined math equation:</p>
+<div class="math">
+<p><img src="_images/math/a6efb6bedebaa59f90873e94d1cd3a1ce690376d.png" alt="\euler"/></p>
+</div><ol class="arabic simple" start="4">
+<li><strong>More examples</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">math</span><span class="p">::</span>
+
+        f(x)
+        =
+        \Biggl \lbrace
+        {
+        0,\text{ if }
+           { x &gt;0}
+        \atop
+        1 \text{ otherwise }
+        }
+
+<span class="p">..</span> <span class="ow">math</span><span class="p">::</span>
+
+   (a + b)^2  &amp;=  (a + b)(a + b) \\
+              &amp;=  a^2 + 2ab + b^2
+
+<span class="p">..</span> <span class="ow">math</span><span class="p">::</span>
+   <span class="nc">:nowrap:</span>
+
+   \begin{eqnarray}
+      y    &amp; = &amp; ax^2 + bx + c \nonumber\\
+      f(x) &amp; = &amp; x^2 + 2xy + y^2\nonumber
+   \end{eqnarray}
+
+<span class="p">..</span> <span class="ow">math</span><span class="p">::</span> e^{i\pi} + 1 = 0
+   <span class="nc">:label:</span> <span class="nf">euler</span>
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="math">
+<p><img src="_images/math/e5dfffd9bb51c369c43e80688442a53dde5ec768.png" alt="f(x)
+=
+\Biggl \lbrace
+{
+0,\text{ if }
+   { x &gt;0}
+\atop
+1 \text{ otherwise }
+}"/></p>
+</div><div class="math">
+<p><img src="_images/math/ea6e4307a1e05ba060f9f2240839ffa1b32f19ce.png" alt="(a + b)^2  &amp;=  (a + b)(a + b) \\
+           &amp;=  a^2 + 2ab + b^2"/></p>
+</div><div class="math">
+<p><img src="_images/math/5a40933cccf08c588cbbea2b97dea930b345a0ee.png" alt="\begin{eqnarray}
+   y    &amp; = &amp; ax^2 + bx + c \nonumber\\
+   f(x) &amp; = &amp; x^2 + 2xy + y^2\nonumber
+\end{eqnarray}"/></p>
+</div><div class="math" id="equation-euler">
+<p><span class="eqno">(2)<a class="headerlink" href="#equation-euler" title="Permalink to this equation">¶</a></span><img src="_images/math/7d4604bee53fd072ec98ee4b389a73a1354f6579.png" alt="e^{i\pi} + 1 = 0"/></p>
+</div></div>
+<div class="section" id="source-codes">
+<h3>5.1.6. Source Codes<a class="headerlink" href="#source-codes" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><strong>Source code block</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">python</span>
+
+        <span class="sd">&#39;&#39;&#39;</span>
+        <span class="sd">This is a source Python code demo for Sphinx.</span>
+        <span class="sd">@date:  Apr 25, 2016</span>
+        <span class="sd">@author: Wenqiang Feng</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+        <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+        <span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
+        <span class="kn">from</span> <span class="nn">docutils.parsers.rst.directives</span> <span class="kn">import</span> <span class="n">path</span>
+
+
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;This is a source Python code demo for Sphinx.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">This is a source Python code demo for Sphinx.</span>
+<span class="sd">@date:  Apr 25, 2016</span>
+<span class="sd">@author: Wenqiang Feng</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
+<span class="kn">from</span> <span class="nn">docutils.parsers.rst.directives</span> <span class="kn">import</span> <span class="n">path</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;This is a source Python code demo for Sphinx.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">r</span>
+
+        <span class="s">&#39;&#39;&#39;</span>
+        <span class="s">This is a source R code demo for Sphinx.</span>
+        <span class="s">@date:  Apr 25, 2016</span>
+        <span class="s">@author: Wenqiang Feng</span>
+        <span class="s">&#39;&#39;&#39;</span>
+
+        <span class="nf">library</span><span class="p">(</span><span class="n">reshape2</span><span class="p">)</span>
+        <span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+        <span class="c1"># import data</span>
+        <span class="n">d</span> <span class="o">&lt;-</span> <span class="nf">melt</span><span class="p">(</span><span class="n">diamonds[</span><span class="p">,</span><span class="o">-</span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="o">:</span><span class="m">4</span><span class="p">)</span><span class="n">]</span><span class="p">)</span>
+        <span class="c1"># plot histogram</span>
+        <span class="nf">ggplot</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">value</span><span class="p">))</span> <span class="o">+</span>
+          <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span><span class="n">variable</span><span class="p">,</span><span class="n">scales</span> <span class="o">=</span> <span class="s">&quot;free_x&quot;</span><span class="p">)</span> <span class="o">+</span>
+          <span class="nf">geom_histogram</span><span class="p">()</span>
+
+        <span class="nf">print</span><span class="p">(</span><span class="s">&quot;This is a source R code demo for Sphinx.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="s">&#39;&#39;&#39;</span>
+<span class="s">This is a source R code demo for Sphinx.</span>
+<span class="s">@date:  Apr 25, 2016</span>
+<span class="s">@author: Wenqiang Feng</span>
+<span class="s">&#39;&#39;&#39;</span>
+
+<span class="nf">library</span><span class="p">(</span><span class="n">reshape2</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="c1"># import data</span>
+<span class="n">d</span> <span class="o">&lt;-</span> <span class="nf">melt</span><span class="p">(</span><span class="n">diamonds[</span><span class="p">,</span><span class="o">-</span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="o">:</span><span class="m">4</span><span class="p">)</span><span class="n">]</span><span class="p">)</span>
+<span class="c1"># plot histogram</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">value</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span><span class="n">variable</span><span class="p">,</span><span class="n">scales</span> <span class="o">=</span> <span class="s">&quot;free_x&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">geom_histogram</span><span class="p">()</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="s">&quot;This is a source R code demo for Sphinx.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><strong>Source code import</strong></li>
+</ol>
+<ul class="simple">
+<li><strong>Python Source code</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> code/sourceCodePy.py
+     <span class="nc">:language:</span> <span class="nf">python</span>
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">This is a source Python code demo for Sphinx.</span>
+<span class="sd">@date:  Apr 25, 2016</span>
+<span class="sd">@author: Wenqiang Feng </span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
+<span class="kn">from</span> <span class="nn">docutils.parsers.rst.directives</span> <span class="kn">import</span> <span class="n">path</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;This is a source Python code demo for Sphinx.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><strong>R Source code</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> code/sourceCodeR.R
+     <span class="nc">:language:</span> <span class="nf">r</span>
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="s">&#39;&#39;&#39;</span>
+<span class="s">This is a source R code demo for Sphinx.</span>
+<span class="s">@date:  Apr 25, 2016</span>
+<span class="s">@author: Wenqiang Feng </span>
+<span class="s">&#39;&#39;&#39;</span>
+
+<span class="nf">library</span><span class="p">(</span><span class="n">reshape2</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="c1"># import data </span>
+<span class="n">d</span> <span class="o">&lt;-</span> <span class="nf">melt</span><span class="p">(</span><span class="n">diamonds[</span><span class="p">,</span><span class="o">-</span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="o">:</span><span class="m">4</span><span class="p">)</span><span class="n">]</span><span class="p">)</span>
+<span class="c1"># plot histogram</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">value</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span><span class="n">variable</span><span class="p">,</span><span class="n">scales</span> <span class="o">=</span> <span class="s">&quot;free_x&quot;</span><span class="p">)</span> <span class="o">+</span> 
+  <span class="nf">geom_histogram</span><span class="p">()</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="s">&quot;This is a source R code demo for Sphinx.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="reference">
+<h3>5.1.7. Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><strong>Paper reference</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">[Ref]</span> Book or article reference, URL or whatever.
+
+Lorem ipsum <span class="s">[Ref]_</span> dolor sit amet.
+</pre></div>
+</div>
+<p>Result:</p>
+<table class="docutils citation" frame="void" id="ref" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[Ref]</a></td><td>Book or article reference, URL or whatever.</td></tr>
+</tbody>
+</table>
+<p>Lorem ipsum <a class="reference internal" href="#ref" id="id3">[Ref]</a> dolor sit amet.</p>
+<p>I would refer the reader to <a class="reference internal" href="reference.html#sphinx2019" id="id4">[Sphinx2019]</a> for more details.</p>
+<ol class="arabic simple" start="2">
+<li><strong>Equation reference</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">math</span><span class="p">::</span>
+   <span class="nc">:label:</span> <span class="nf">eq_condition</span>
+
+        f(x)
+        =
+        \Biggl \lbrace
+        {
+        0,\text{ if }
+           { x &gt;0}
+        \atop
+        1 \text{ otherwise }
+        }
+
+The Equation <span class="na">:eq:</span><span class="nv">`eq_condition`</span> is the definition of <span class="na">:math:</span><span class="nv">`f(x)`</span>.
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="math" id="equation-eq-condition">
+<p><span class="eqno">(3)<a class="headerlink" href="#equation-eq-condition" title="Permalink to this equation">¶</a></span><img src="_images/math/f3c26c283bbd6e26fe5ecbff05914b8813f9c328.png" alt="f(x)
+     =
+     \Biggl \lbrace
+     {
+     0,\text{ if }
+        { x &gt;0}
+     \atop
+     1 \text{ otherwise }
+     }"/></p>
+</div><p>The Equation <a class="reference internal" href="#equation-eq-condition">(3)</a> is the definition of <img class="math" src="_images/math/a1e0efec789bf92927c7373828e7972390512bc9.png" alt="f(x)"/>.</p>
+<ol class="arabic simple" start="4">
+<li><strong>Figure reference</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_fig_hist_demo:</span>
+<span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> images/avg_rating_mon.png
+   <span class="nc">:scale:</span> <span class="nf">50 %</span>
+   <span class="nc">:alt:</span> <span class="nf">map to buried treasure</span>
+
+   The histogram of the gouped dataset
+
+The Figure. <span class="na">:ref:</span><span class="nv">`fig_hist_demo`</span> is the histogram of the gouped dataset.
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="figure" id="id14">
+<span id="fig-hist-demo"></span><a class="reference internal image-reference" href="_images/avg_rating_mon.png"><img alt="map to buried treasure" src="_images/avg_rating_mon.png" style="width: 641.5px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">The histogram of the gouped dataset</span></p>
+</div>
+<p>The Figure. <a class="reference internal" href="#fig-hist-demo"><span class="std std-ref">The histogram of the gouped dataset</span></a> is the histogram of the gouped dataset.</p>
+<ol class="arabic simple" start="5">
+<li><strong>Table reference</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_table_demo:</span>
+<span class="p">..</span> <span class="ow">table</span><span class="p">::</span> The general table demo
+
+        +------------------------+------------+----------+----------+
+        <span class="o">|</span> Header row, column 1   | Header 2   | Header 3 | Header 4 |
+        <span class="o">|</span> (header rows optional) |            |          |          |
+        +========================+============+==========+==========+
+        <span class="o">|</span> body row 1, column 1   | column 2   | column 3 | column 4 |
+        +------------------------+------------+----------+----------+
+        <span class="o">|</span> body row 2             | Cells may span columns.          |
+        +------------------------+------------+---------------------+
+        <span class="o">|</span> body row 3             | Cells may  | - Table cells       |
+        +------------------------+ span rows. | - contain           |
+        <span class="o">|</span> body row 4             |            | - body elements.    |
+        +------------------------+------------+---------------------+
+
+Please see the above Table. <span class="na">:ref:</span><span class="nv">`table_demo`</span>.
+</pre></div>
+</div>
+<p>Result:</p>
+<span id="table-demo"></span><table border="1" class="docutils" id="id15">
+<caption><span class="caption-text">The general table demo</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="43%" />
+<col width="21%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header row, column 1
+(header rows optional)</th>
+<th class="head">Header 2</th>
+<th class="head">Header 3</th>
+<th class="head">Header 4</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body row 1, column 1</td>
+<td>column 2</td>
+<td>column 3</td>
+<td>column 4</td>
+</tr>
+<tr class="row-odd"><td>body row 2</td>
+<td colspan="3">Cells may span columns.</td>
+</tr>
+<tr class="row-even"><td>body row 3</td>
+<td rowspan="2">Cells may
+span rows.</td>
+<td colspan="2" rowspan="2"><ul class="first last simple">
+<li>Table cells</li>
+<li>contain</li>
+<li>body elements.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>body row 4</td>
+</tr>
+</tbody>
+</table>
+<p>Please see the above Table. <a class="reference internal" href="#table-demo"><span class="std std-ref">The general table demo</span></a>.</p>
+<ol class="arabic simple" start="6">
+<li><strong>Footnotes</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Lorem ipsum <span class="s">[#f1]_</span> dolor sit amet ... <span class="s">[#f2]_</span>
+
+<span class="p">..</span> <span class="ow">rubric</span><span class="p">::</span> Footnotes
+
+<span class="p">..</span> <span class="nt">[#f1]</span> Text of the first footnote.
+<span class="p">..</span> <span class="nt">[#f2]</span> Text of the second footnote.
+</pre></div>
+</div>
+<p>Result:</p>
+<p>Lorem ipsum <a class="footnote-reference" href="#f1" id="id5">[1]</a> dolor sit amet … <a class="footnote-reference" href="#f2" id="id6">[2]</a></p>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[1]</a></td><td>Text of the first footnote.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[2]</a></td><td>Text of the second footnote.</td></tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="7">
+<li><strong>Hyperlinks</strong></li>
+</ol>
+<ul class="simple">
+<li>General hyperlink</li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>You are more than welcome to visit my personal webpage: <span class="s">`Feng Website`_</span>.
+
+<span class="p">..</span> <span class="nt">_Feng Website:</span> http://web.utk.edu/~wfeng1/
+</pre></div>
+</div>
+<p>Result:</p>
+<p>You are more than welcome to visit my personal webpage: <a class="reference external" href="http://web.utk.edu/~wfeng1/">Feng Website</a>.</p>
+<ul class="simple">
+<li>Embeded Youtube link:</li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">raw</span><span class="p">::</span> html
+
+    &lt;iframe width=&quot;700&quot; height=&quot;315&quot;
+    src=&quot;https://www.youtube.com/embed/mrEee4bhc7Y&quot;
+    frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</pre></div>
+</div>
+<p>Result:</p>
+<iframe width="700" height="315"
+src="https://www.youtube.com/embed/mrEee4bhc7Y"
+frameborder="0" allowfullscreen></iframe><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">You have to use the hyperlink: <code class="docutils literal notranslate"><span class="pre">https://www.youtube.com/embed/</span></code> + <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="roles">
+<h2>5.2. Roles<a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h2>
+<p>A role or “custom interpreted text role” is an inline piece of explicit markup. It signifies that that the enclosed text should be interpreted in a specific way. Sphinx uses this to provide semantic markup and cross-referencing of identifiers, as described in the appropriate section. More details can be found at: <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#customization">http://docutils.sourceforge.net/docs/ref/rst/roles.html#customization</a></p>
+<div class="section" id="standard-roles">
+<h3>5.2.1. Standard Roles<a class="headerlink" href="#standard-roles" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Line markup</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">*</span> emphasis – equivalent of <span class="ge">*emphasis*</span>
+
+<span class="m">*</span> strong – equivalent of <span class="gs">**strong**</span>
+
+<span class="m">*</span> literal – equivalent of <span class="s">``literal``</span>
+
+<span class="m">*</span> subscript – H\ <span class="na">:sub:</span><span class="nv">`2`</span>\ O
+
+<span class="m">*</span> superscript – E = mc\ <span class="na">:sup:</span><span class="nv">`2`</span>
+
+<span class="m">*</span> title-reference – for titles of books, periodicals, and other materials
+</pre></div>
+</div>
+<p>Result:</p>
+<ul class="simple">
+<li>emphasis – equivalent of <em>emphasis</em></li>
+<li>strong – equivalent of <strong>strong</strong></li>
+<li>literal – equivalent of <code class="docutils literal notranslate"><span class="pre">literal</span></code></li>
+<li>subscript – H<sub>2</sub>O</li>
+<li>superscript – E = mc<sup>2</sup></li>
+<li>title-reference – for titles of books, periodicals, and other materials</li>
+</ul>
+</div>
+<div class="section" id="specialized-roles">
+<h3>5.2.2. Specialized Roles<a class="headerlink" href="#specialized-roles" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>raw</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">raw</span><span class="p">::</span> html
+
+    &lt;iframe width=&quot;700&quot; height=&quot;315&quot;
+    src=&quot;https://www.youtube.com/embed/2Mg8QD0F1dQ&quot;
+    frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</pre></div>
+</div>
+<p>Result:</p>
+<iframe width="700" height="315"
+src="https://www.youtube.com/embed/2Mg8QD0F1dQ"
+frameborder="0" allowfullscreen></iframe><p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">role</span><span class="p">::</span> raw-html(raw)
+   <span class="nc">:format:</span> <span class="nf">html</span>
+
+If there just <span class="ge">*has*</span> to be a line break here,
+<span class="na">:raw-html:</span><span class="nv">`&lt;br /&gt;`</span>
+it can be accomplished with a &quot;raw&quot;-derived role.
+But the line block syntax should be considered first.
+</pre></div>
+</div>
+<p>Result:</p>
+<p>If there just <em>has</em> to be a line break here,
+<span class="raw-html"><br /></span>
+it can be accomplished with a “raw”-derived role.
+But the line block syntax should be considered first.</p>
+<ul class="simple">
+<li><strong>replace</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">|sphx|</span> <span class="ow">replace</span><span class="p">::</span> Sphinx
+<span class="p">..</span> <span class="nt">|reST|</span> <span class="ow">replace</span><span class="p">::</span> reStructuredText
+
+|reST| is awesome!
+</pre></div>
+</div>
+<p>Sphinx and reStructuredText are awesome!</p>
+</div>
+</div>
+<div class="section" id="directives">
+<h2>5.3. Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h2>
+<p>A directive is a generic block of explicit markup. Along with roles, it is one of the extension mechanisms of reST, and Sphinx makes heavy use of it.</p>
+<div class="section" id="admonitions">
+<h3>5.3.1. Admonitions<a class="headerlink" href="#admonitions" title="Permalink to this headline">¶</a></h3>
+<p>Admonitions: <code class="docutils literal notranslate"><span class="pre">attention</span></code>, <code class="docutils literal notranslate"><span class="pre">caution</span></code>, <code class="docutils literal notranslate"><span class="pre">danger</span></code>, <code class="docutils literal notranslate"><span class="pre">error</span></code>, <code class="docutils literal notranslate"><span class="pre">hint</span></code>, <code class="docutils literal notranslate"><span class="pre">important</span></code>, <code class="docutils literal notranslate"><span class="pre">note</span></code>, <code class="docutils literal notranslate"><span class="pre">tip</span></code>, <code class="docutils literal notranslate"><span class="pre">warning</span></code></p>
+<ul class="simple">
+<li><strong>attention</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">attention</span><span class="p">::</span>
+
+   You neen to pay attention at here!
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">You neen to pay attention at here!</p>
+</div>
+<ul class="simple">
+<li><strong>caution</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">caution</span><span class="p">::</span>
+
+   This is a caution alert!
+</pre></div>
+</div>
+<p>Restlut:</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">This is a caution alert!</p>
+</div>
+<ul class="simple">
+<li><strong>important</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">important</span><span class="p">::</span>
+
+        This is important!
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">This is important!</p>
+</div>
+<ul class="simple">
+<li><strong>User defined admonition</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">admonition</span><span class="p">::</span> User defined name
+
+   You can make up your own admonition too.
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="admonition-user-defined-name admonition">
+<p class="first admonition-title">User defined name</p>
+<p class="last">You can make up your own admonition too.</p>
+</div>
+<ul class="simple">
+<li><strong>seealso</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">seealso</span><span class="p">::</span>
+
+   The authoritative `reStructuredText User Documentation
+   &lt;http://docutils.sourceforge.net/rst.html&gt;`_.  The &quot;ref&quot; links in this
+   document link to the description of the individual constructs in the reST
+   reference.
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last">The authoritative <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText User Documentation</a>.  The “ref” links in this
+document link to the description of the individual constructs in the reST
+reference.</p>
+</div>
+<p>See more details at <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions">Admonitions</a>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="github.html" class="btn btn-neutral float-right" title="6. Publishing on Github" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="sphinx.html" class="btn btn-neutral float-left" title="4. Sphinx Configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Wenqiang Feng
+      <span class="lastupdated">
+        Last updated on Mar 17, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
