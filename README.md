@@ -1,6 +1,7 @@
 # StatsPy
 
-This is my statistics python library: https://runawayhorse001.github.io/statspy. 
+This is my statistics python library repositories.
+The ``API`` can be found at: https://runawayhorse001.github.io/statspy. 
 If you want to colne and install it, you can use 
 
 - clone
