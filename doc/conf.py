@@ -262,7 +262,7 @@ def linkcode_resolve(domain, info):
     tag = subprocess.Popen(['git', 'rev-parse', 'HEAD'],
                            stdout=subprocess.PIPE,
                            universal_newlines=True).communicate()[0][:-1]
-    return "https://github.com/runawayhorse001/%s/%s" % (tag, filename)
+    return "https://github.com/runawayhorse001/%s" % (filename)
 
 # Options for LaTeX output
 # ------------------------
