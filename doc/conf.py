@@ -177,7 +177,7 @@ def setup(app):
 #html_title = None
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
-#html_show_sphinx = False
+html_show_sphinx = False
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -259,9 +259,9 @@ def linkcode_resolve(domain, info):
     except Exception:
         filename = info['module'].replace('.', '/') + '.py'
     import subprocess
-    tag = subprocess.Popen(['git', 'rev-parse', 'HEAD'],
-                           stdout=subprocess.PIPE,
-                           universal_newlines=True).communicate()[0][:-1]
+    # tag = subprocess.Popen(['git', 'rev-parse', 'HEAD'],
+    #                        stdout=subprocess.PIPE,
+    #                        universal_newlines=True).communicate()[0][:-1]
     # https://github.com/runawayhorse001/statspy/blob/master/statspy/basics.py
     return "https://github.com/runawayhorse001/statspy/blob/master/%s" % (filename)
 
